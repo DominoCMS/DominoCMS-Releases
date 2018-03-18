@@ -1,0 +1,182 @@
+/**
+ * filename: scss/MenuService.scss
+ * developer: Domino
+ * item: MenuService
+ * version: v1.0.0
+ * date: 14. 8. 17
+ */
+
+$DominoHeaderMenuService-position: relative !default;
+$DominoHeaderMenuService-display: none !default;
+$DominoHeaderMenuService-float: right !default;
+$DominoHeaderMenuService-margin-top: 0 !default;
+$DominoHeaderMenuService-button-font-size: 16px !default;
+$DominoHeaderMenuService-button-padding: 17px 15px !default;
+$DominoHeaderMenuService-button-color: #000 !default;
+$DominoHeaderMenuService-button-hover-color: #999 !default;
+$DominoHeaderMenuService-ul-z-index: 60 !default;
+$DominoHeaderMenuService-ul-top: 50px !default;
+$DominoHeaderMenuService-ul-background-color: rgba(#000,0.95) !default;
+$DominoHeaderMenuService-a-transition: all 0.3s Ease-In-Out !default;
+$DominoHeaderMenuService-a-box-shadow:inset -1px 0 0 0 rgba(#000,0.05) !default;
+$DominoHeaderMenuService-a-padding: 10px 10px !default;
+$DominoHeaderMenuService-a-background-color: transparent !default;
+$DominoHeaderMenuService-a-color: #333 !default;
+$DominoHeaderMenuService-a-text-align: center !default;
+$DominoHeaderMenuService-a-font-family: Arial, Helvetica, sans-serif !default;
+$DominoHeaderMenuService-a-font-size: 14px !default;
+$DominoHeaderMenuService-a-line-height: 20px !default;
+$DominoHeaderMenuService-a-icon-color: #999 !default;
+$DominoHeaderMenuService-a-icon-margin: 0 5px 0 0 !default;
+$DominoHeaderMenuService-a-icon-display: inline !default;
+$DominoHeaderMenuService-a-hover-color: #666 !default;
+$DominoHeaderMenuService-a-hover-background-color: rgba(#000,0.05) !default;
+$DominoHeaderMenuService-a-hover-box-shadow: inset -1px 0 0 0 rgba(#000,0.05) !default;
+$DominoHeaderMenuService-a-hover-icon-color: #FFF !default;
+$DominoHeaderMenuService-a-active-color: #999 !default;
+$DominoHeaderMenuService-a-active-background-color: transparent !default;
+$DominoHeaderMenuService-a-active-box-shadow: inset -1px 0 0 0 rgba(#000,0.05),inset 0 -3px 0 0 rgba(#666,1) !default;
+$DominoHeaderMenuService-a-active-icon-color: #FFF !default;
+
+$DominoHeaderMenuService-large-position: relative !default;
+$DominoHeaderMenuService-large-left: auto !default;
+$DominoHeaderMenuService-large-display: block !default;
+$DominoHeaderMenuService-large-ul-background-color: transparent !default;
+$DominoHeaderMenuService-large-margin-top: 10px !default;
+
+.domino-header {
+
+  .menuservice {
+	width: 100%;
+	position: $DominoHeaderMenuService-position;
+	display: $DominoHeaderMenuService-display;
+	float: $DominoHeaderMenuService-float;
+	margin-top: $DominoHeaderMenuService-margin-top;
+
+	button {
+	  display: block;
+	  float: left;
+	  font-size: $DominoHeaderMenuService-button-font-size;
+	  line-height: 0;
+	  padding: $DominoHeaderMenuService-button-padding;
+	  color: $DominoHeaderMenuService-button-color;
+
+	  &:hover {
+		color: $DominoHeaderMenuService-button-hover-color;
+	  }
+	}
+
+	ul {
+	  width: 100%;
+	  display: block;
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  position: absolute;
+	  top: $DominoHeaderMenuService-ul-top;
+	  z-index: $DominoHeaderMenuService-ul-z-index;
+	  background-color: $DominoHeaderMenuService-ul-background-color;
+
+	  &.hidden {
+		display: none;
+	  }
+
+	  li {
+		margin: 0;
+		padding: 0;
+		display: block;
+		width: 100%;
+		position: relative;
+
+		a {
+		  background-color: $DominoHeaderMenuService-a-background-color;
+		  font-family: $DominoHeaderMenuService-a-font-family;
+		  font-size: $DominoHeaderMenuService-a-font-size;
+		  line-height: $DominoHeaderMenuService-a-line-height;
+		  color: $DominoHeaderMenuService-a-color;
+		  text-align: $DominoHeaderMenuService-a-text-align;
+		  padding: $DominoHeaderMenuService-a-padding;
+		  text-decoration: none;
+		  display: block;
+		  -webkit-transition: $DominoHeaderMenuService-a-transition;
+		  -moz-transition: $DominoHeaderMenuService-a-transition;
+		  -ms-transition: $DominoHeaderMenuService-a-transition;
+		  -o-transition: $DominoHeaderMenuService-a-transition;
+		  transition: $DominoHeaderMenuService-a-transition;
+		  -moz-box-shadow: $DominoHeaderMenuService-a-box-shadow;
+		  -webkit-box-shadow: $DominoHeaderMenuService-a-box-shadow;
+		  box-shadow: $DominoHeaderMenuService-a-box-shadow;
+
+		  &:hover {
+			background-color: $DominoHeaderMenuService-a-hover-background-color;
+			color: $DominoHeaderMenuService-a-hover-color;
+			-moz-box-shadow: $DominoHeaderMenuService-a-hover-box-shadow;
+			-webkit-box-shadow: $DominoHeaderMenuService-a-hover-box-shadow;
+			box-shadow: $DominoHeaderMenuService-a-hover-box-shadow;
+
+			.icon {
+			  color: $DominoHeaderMenuService-a-hover-icon-color;
+			}
+		  }
+
+		  .icon {
+			-webkit-transition: $DominoHeaderMenuService-a-transition;
+			-moz-transition: $DominoHeaderMenuService-a-transition;
+			-ms-transition: $DominoHeaderMenuService-a-transition;
+			-o-transition: $DominoHeaderMenuService-a-transition;
+			transition: $DominoHeaderMenuService-a-transition;
+			margin: $DominoHeaderMenuService-a-icon-margin;
+			color: $DominoHeaderMenuService-a-icon-color;
+			display: $DominoHeaderMenuService-a-icon-display;
+		  }
+
+		}
+
+		&.active a {
+		  background-color: $DominoHeaderMenuService-a-active-background-color;
+		  color: $DominoHeaderMenuService-a-active-color;
+		  -moz-box-shadow: $DominoHeaderMenuService-a-active-box-shadow;
+		  -webkit-box-shadow: $DominoHeaderMenuService-a-active-box-shadow;
+		  box-shadow: $DominoHeaderMenuService-a-active-box-shadow;
+
+		  .icon {
+			color: $DominoHeaderMenuService-a-active-icon-color;
+		  }
+
+		}
+	  }
+	}
+  }
+}
+@media screen and #{breakpoint(large)} {
+  .domino-header {
+	  
+	.menuservice {
+		left: $DominoHeaderMenuService-large-left;
+		  margin-top: $DominoHeaderMenuService-large-margin-top;
+		  width: auto;
+		  display: $DominoHeaderMenuService-large-display;
+
+	  button {
+		display: none;
+	  }
+
+	  ul {
+		background-color: $DominoHeaderMenuService-large-ul-background-color;
+		display: block;
+		position: relative;
+		top: 0;
+
+		&.hidden {
+		  display: block;
+		}
+
+		li {
+		  float: left;
+		  width: auto;
+
+		}
+	  }
+	}
+  }
+}

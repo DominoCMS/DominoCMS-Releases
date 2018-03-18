@@ -1,0 +1,1 @@
+﻿DominoViews.registerView( 'Domino.Admin.Entry.Edit.Field.ChildEntries', function( data ) {	"use strict";	return <div class="grid-x grid-padding-x field">			<div class="small-6 medium-4 large-2 cell">				<a name="newChildEntry" href="#" class="button"><span class="icon-new">New</span></a>			</div>		Here come the Content modules			</div>});

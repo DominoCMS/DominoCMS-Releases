@@ -1,0 +1,441 @@
+/**
+ * filename: scss/Slidez.scss
+ * developer: Domino
+ * item: Slidez
+ * version: v1.0.0
+ * date: 18. 7. 17
+ */
+$DominoSlidez-background-color: #DDD !default;
+$DominoSlidez-background-image: none !default;
+$DominoSlidez-background-position: 50% 50% !default;
+$DominoSlidez-background-size: cover !default;
+$DominoSlidez-background-repeat: no-repeat !default;
+$DominoSlidez-background-attachment: none !default;
+$DominoSlidez-z-index: 1 !default;
+$DominoSlidez-small-position: relative !default;
+
+$DominoSlidez-article-height: 100% !default;
+
+$DominoSlidez-photographer-font: inherit !default;
+$DominoSlidez-photographer-color: rgba(#FFF, 0.5) !default;
+$DominoSlidez-photographer-color-hover: #333 !default;
+$DominoSlidez-photographer-background-color: rgba(#FFF, 0.2) !default;
+$DominoSlidez-photographer-background-color-hover: rgba(#FFF, 0.5) !default;
+$DominoSlidez-photographer-font: inherit !default;
+
+$DominoSlidez-buttons-color: rgba(255, 255, 255, 0.1) !default;
+$DominoSlidez-buttons-color-hover: rgba(255, 255, 255, 0.7) !default;
+$DominoSlidez-small-buttons-top: 40% !default;
+$DominoSlidez-medium-buttons-top: $DominoSlidez-small-buttons-top !default;
+$DominoSlidez-large-buttons-top: $DominoSlidez-medium-buttons-top !default;
+
+$DominoSlidez-nav-bullet-color: rgba(255, 255, 255, 0.5) !default;
+$DominoSlidez-nav-bullet-color-hover: rgba(255, 255, 255, 0.9) !default;
+
+$DominoSlidez-content-overlay-color: #FFF !default;
+$DominoSlidez-content-overlay-top: 100% !default;
+$DominoSlidez-content-overlay-height: 0 !default;
+$DominoSlidez-content-overlay-background-color: rgba(#000, 0.4) !default;
+$DominoSlidez-content-overlay-hover-background-color: rgba(#000, 0.45) !default;
+$DominoSlidez-content-background: none !default;
+$DominoSlidez-content-overlay-h1-color: #FFF !default;
+$DominoSlidez-content-overlay-h2-color: $DominoSlidez-content-overlay-h1-color !default;
+$DominoSlidez-content-overlay-h3-color: $DominoSlidez-content-overlay-h2-color !default;
+$DominoSlidez-content-overlay-h4-color: $DominoSlidez-content-overlay-h3-color !default;
+$DominoSlidez-content-overlay-p-color: $DominoSlidez-content-overlay-h1-color !default;
+$DominoSlidez-content-background-color: transparent !default;
+$DominoSlidez-content-hover-background-color: rgba(#000, 0) !default;
+$DominoSlidez-content-padding: 50px 0 0 0 !default;
+$DominoSlidez-content-transition: all 0.1s Ease-In-Out !default;
+$DominoSlidez-content-text-align: center !default;
+$DominoSlidez-content-align-items: center !default;
+$DominoSlidez-content-h1-margin: 0 0 0.2em 0 !default;
+$DominoSlidez-content-h1-color: #FFF !default;
+$DominoSlidez-content-h1-font-size: 3em !default;
+$DominoSlidez-content-h1-line-height: 1em !default;
+$DominoSlidez-content-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoSlidez-content-h2-margin: $DominoSlidez-content-h1-margin !default;
+$DominoSlidez-content-h2-color: $DominoSlidez-content-h1-color !default;
+$DominoSlidez-content-h2-font-size: 2em !default;
+$DominoSlidez-content-h2-line-height: 1em !default;
+$DominoSlidez-content-h2-font-family: $DominoSlidez-content-h1-font-family !default;
+$DominoSlidez-content-h3-margin: $DominoSlidez-content-h2-margin !default;
+$DominoSlidez-content-h3-color: $DominoSlidez-content-h2-color !default;
+$DominoSlidez-content-h3-font-size: 1.5em !default;
+$DominoSlidez-content-h3-line-height: 1em !default;
+$DominoSlidez-content-h3-font-family: $DominoSlidez-content-h2-font-family !default;
+$DominoSlidez-content-p-margin: $DominoSlidez-content-h3-margin !default;
+$DominoSlidez-content-p-color: $DominoSlidez-content-h3-color !default;
+$DominoSlidez-content-p-font-size: 1.1em !default;
+$DominoSlidez-content-p-line-height: 1em !default;
+$DominoSlidez-content-p-font-family: $DominoSlidez-content-h2-font-family !default;
+
+$DominoSlidez-medium-content-padding: 70px 0 0 0 !default;
+$DominoSlidez-large-content-padding: 100px 0 0 0 !default;
+
+$DominoSlidez-small-height: 120px !default;
+$DominoSlidez-small-margin-bottom: 0 !default;
+$DominoSlidez-small-front-height: 600px !default;
+$DominoSlidez-small-title-height: 500px !default;
+$DominoSlidez-small-inside-height: 200px !default;
+$DominoSlidez-small-empty-height: 150px !default;
+
+$DominoSlidez-medium-height: 120px !default;
+$DominoSlidez-medium-margin-bottom: $DominoSlidez-small-margin-bottom !default;
+$DominoSlidez-medium-front-height: 500px !default;
+$DominoSlidez-medium-title-height: 400px !default;
+$DominoSlidez-medium-inside-height: 350px !default;
+$DominoSlidez-medium-empty-height: 200px !default;
+
+$DominoSlidez-large-height: 200px !default;
+$DominoSlidez-large-margin-bottom: $DominoSlidez-medium-margin-bottom !default;
+$DominoSlidez-large-front-height: 550px !default;
+$DominoSlidez-large-title-height: 500px !default;
+$DominoSlidez-large-inside-height: 400px !default;
+$DominoSlidez-large-empty-height: 200px !default;
+
+.domino-slidez {
+  width: 100%;
+  height: $DominoSlidez-small-height;
+  margin-bottom: $DominoSlidez-small-margin-bottom;
+  top: 0;
+  left: 0;
+  position: $DominoSlidez-small-position;
+  background-color: $DominoSlidez-background-color;
+  background-image: $DominoSlidez-background-image;
+  background-position: $DominoSlidez-background-position;
+  background-size: $DominoSlidez-background-size;
+  background-repeat: $DominoSlidez-background-repeat;
+  background-attachment: $DominoSlidez-background-attachment;
+  -webkit-transition: all 1s Ease-In-Out;
+  -moz-transition: all 1s Ease-In-Out;
+  -ms-transition: all 1s Ease-In-Out;
+  -o-transition: all 1s Ease-In-Out;
+  transition: all 1s Ease-In-Out;
+
+  //overflow: hidden;
+
+  &.height-front {
+    height: $DominoSlidez-small-front-height;
+  }
+  &.height-title {
+    height: $DominoSlidez-small-title-height;
+  }
+  &.height-inside {
+    height: $DominoSlidez-small-inside-height;
+  }
+  &.height-empty {
+    height: $DominoSlidez-small-empty-height;
+  }
+  .slides {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+
+  article {
+    position: absolute;
+    z-index: $DominoSlidez-z-index;
+    width: 100%;
+    height: 100%;
+
+    .container {
+      position: absolute;
+      background-position: 50% 50%;
+      width: 100%;
+      height: $DominoSlidez-article-height;
+      z-index: -2;
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      background-size: cover;
+      overflow: hidden;
+
+      .content {
+        width: 100%;
+        height: $DominoSlidez-article-height;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: $DominoSlidez-content-background;
+        box-sizing: border-box;
+        padding: $DominoSlidez-content-padding;
+        -webkit-transition: $DominoSlidez-content-transition;
+        -moz-transition: $DominoSlidez-content-transition;
+        -ms-transition: $DominoSlidez-content-transition;
+        -o-transition: $DominoSlidez-content-transition;
+        transition: $DominoSlidez-content-transition;
+        text-align: $DominoSlidez-content-text-align;
+
+        > div {
+          display: flex;
+          align-items: $DominoSlidez-content-align-items;
+          height: 100%;
+          position: relative;
+        }
+
+        &.overlay {
+          background-color: $DominoSlidez-content-overlay-background-color;
+
+          &:hover {
+            background-color: $DominoSlidez-content-overlay-hover-background-color;
+          }
+
+          h1 {
+            color: $DominoSlidez-content-overlay-h1-color;
+          }
+          h2 {
+            color: $DominoSlidez-content-overlay-h2-color;
+          }
+          h3 {
+            color: $DominoSlidez-content-overlay-h3-color;
+          }
+          h4 {
+            color: $DominoSlidez-content-overlay-h4-color;
+          }
+          p {
+            color: $DominoSlidez-content-overlay-p-color;
+          }
+
+        }
+
+        &:hover:not(.overlay) {
+          background-color: $DominoSlidez-content-hover-background-color;
+        }
+
+        h1 {
+          padding: 0;
+          margin: $DominoSlidez-content-h1-margin;
+          color: $DominoSlidez-content-h1-color;
+          font-size: $DominoSlidez-content-h1-font-size;
+          line-height: $DominoSlidez-content-h1-line-height;
+          font-family: $DominoSlidez-content-h1-font-family;
+        }
+
+        h2 {
+          padding: 0;
+          margin: $DominoSlidez-content-h2-margin;
+          color: $DominoSlidez-content-h2-color;
+          font-size: $DominoSlidez-content-h2-font-size;
+          line-height: $DominoSlidez-content-h2-line-height;
+          font-family: $DominoSlidez-content-h2-font-family;
+        }
+
+        h3 {
+          padding: 0;
+          margin: $DominoSlidez-content-h3-margin;
+          color: $DominoSlidez-content-h3-color;
+          font-size: $DominoSlidez-content-h3-font-size;
+          line-height: $DominoSlidez-content-h3-line-height;
+          font-family: $DominoSlidez-content-h3-font-family;
+        }
+
+        p {
+          padding: 0;
+          margin: $DominoSlidez-content-p-margin;
+          color: $DominoSlidez-content-p-color;
+          font-size: $DominoSlidez-content-p-font-size;
+          line-height: $DominoSlidez-content-p-line-height;
+          font-family: $DominoSlidez-content-p-font-family;
+        }
+
+      }
+    }
+
+  }
+
+  .photographer {
+    font-size: 14px;
+    font-family: $DominoSlidez-photographer-font;
+    line-height: 14px;
+    color: $DominoSlidez-photographer-color;
+    padding: 5px 7px 5px 7px;
+    background-color: $DominoSlidez-photographer-background-color;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+
+    &:hover {
+      color: $DominoSlidez-photographer-color-hover;
+      background-color: $DominoSlidez-photographer-background-color-hover;
+    }
+
+  }
+
+  .buttons {
+    display: none;
+    z-index: 4;
+    width: 10%;
+    height: 20%;
+    top: $DominoSlidez-small-buttons-top;
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 0.3s Ease-In-Out;
+    -moz-transition: all 0.3s Ease-In-Out;
+    -ms-transition: all 0.3s Ease-In-Out;
+    -o-transition: all 0.3s Ease-In-Out;
+    transition: all 0.3s Ease-In-Out;
+
+    span {
+      font-size: 40px;
+      line-height: 40px;
+      color: $DominoSlidez-buttons-color;
+      margin: -20px 0 0 -20px;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+    }
+
+    &.slideNext {
+      right: 0;
+      left: auto;
+    }
+
+    &:hover span {
+      color: $DominoSlidez-buttons-color-hover;
+    }
+  }
+
+  .nav {
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+    z-index: 4;
+    margin: 0;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: all 0.3s Ease-In-Out;
+    -moz-transition: all 0.3s Ease-In-Out;
+    -ms-transition: all 0.3s Ease-In-Out;
+    -o-transition: all 0.3s Ease-In-Out;
+    transition: all 0.3s Ease-In-Out;
+
+    ul {
+      margin: 0 auto;
+      padding: 0;
+      height: 100%;
+      position: relative;
+      list-style: none;
+
+      li {
+        font-size: 16px;
+        line-height: 16px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: relative;
+
+        a {
+          font-size: 14px;
+          line-height: 14px;
+          color: $DominoSlidez-nav-bullet-color;
+          margin: -8px 0 0 -8px;
+          top: 50%;
+          left: 50%;
+          position: absolute;
+
+          &:hover, &.active {
+            color: $DominoSlidez-nav-bullet-color-hover;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .responsive {
+    text-indent: $DominoSlidez-small-front-height;
+    font-size: $DominoSlidez-small-title-height;
+    line-height: $DominoSlidez-small-inside-height;
+    max-height: $DominoSlidez-small-empty-height;
+  }
+
+}
+
+@media screen and #{breakpoint(medium)} {
+  .domino-slidez {
+    height: $DominoSlidez-medium-height;
+    margin-bottom: $DominoSlidez-medium-margin-bottom;
+
+    &.height-front {
+      height: $DominoSlidez-medium-front-height;
+    }
+    &.height-title {
+      height: $DominoSlidez-medium-title-height;
+    }
+    &.height-inside {
+      height: $DominoSlidez-medium-inside-height;
+    }
+    &.height-empty {
+      height: $DominoSlidez-medium-empty-height;
+    }
+
+    .nav {
+      left: 50%;
+      margin: 0 0 0 -20%;
+      width: 40%;
+    }
+    .buttons {
+      top: $DominoSlidez-medium-buttons-top;
+    }
+    .responsive {
+      text-indent: $DominoSlidez-medium-front-height;
+      font-size: $DominoSlidez-medium-title-height;
+      line-height: $DominoSlidez-medium-inside-height;
+      max-height: $DominoSlidez-medium-empty-height;
+    }
+
+    article {
+      .container {
+        .content {
+          padding: $DominoSlidez-medium-content-padding;
+        }
+      }
+    }
+  }
+}
+
+@media screen and #{breakpoint(large)} {
+  .domino-slidez {
+    height: $DominoSlidez-large-height;
+    margin-bottom: $DominoSlidez-large-margin-bottom;
+
+    &.height-front {
+      height: $DominoSlidez-large-front-height;
+    }
+    &.height-title {
+      height: $DominoSlidez-large-title-height;
+    }
+    &.height-inside {
+      height: $DominoSlidez-large-inside-height;
+    }
+    &.height-empty {
+      height: $DominoSlidez-large-empty-height;
+    }
+    .buttons {
+      top: $DominoSlidez-large-buttons-top;
+    }
+    .responsive {
+      text-indent: $DominoSlidez-large-front-height;
+      font-size: $DominoSlidez-large-title-height;
+      line-height: $DominoSlidez-large-inside-height;
+      max-height: $DominoSlidez-large-empty-height;
+    }
+
+    article {
+      .container {
+        .content {
+          padding: $DominoSlidez-large-content-padding;
+        }
+      }
+    }
+  }
+}

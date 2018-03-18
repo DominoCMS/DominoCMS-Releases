@@ -1,0 +1,50 @@
+$DominoCookies-background-color: rgba(#333,0.9) !default;
+$DominoCookies-text-color: #FFF !default;
+$DominoCookies-link-color: #999 !default;
+$DominoCookies-link-hover-color: #FFF !default;
+$DominoCookies-button-color: #FFF !default;
+$DominoCookies-button-background-color: #999 !default;
+$DominoCookies-button-hover-color: #CCC !default;
+$DominoCookies-button-hover-background-color: #666 !default;
+
+.domino-cookies {
+  z-index: 12000;
+  background-color: $DominoCookies-background-color;
+  width: 100%;
+  display: block;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+
+  a.btn {
+    white-space: nowrap;
+    color: $DominoCookies-button-color;
+    padding: 4px 6px 4px 6px;
+    background-color: $DominoCookies-button-background-color;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+
+    &:hover {
+      color: $DominoCookies-button-hover-color;
+      background-color: $DominoCookies-button-hover-background-color;
+    }
+  }
+
+  a {
+    color: $DominoCookies-link-color;
+
+    &:hover {
+      color: $DominoCookies-link-hover-color;
+    }
+  }
+
+  > div {
+    font-size: 13px;
+    line-height: 20px;
+    color: $DominoCookies-text-color;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+    position: relative;
+  }
+}

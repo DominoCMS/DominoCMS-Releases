@@ -1,5 +1,5 @@
 # DominoCMS Open Source project
-## Version 1.0.0 alpha
+## Version 0.9.141
 https://www.dominocms.com
 
 ## Testers

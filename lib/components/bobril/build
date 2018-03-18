@@ -1,0 +1,3 @@
+#!/bin/sh
+
+jsx-bobril --harmony $1 > $2

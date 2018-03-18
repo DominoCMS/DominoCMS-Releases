@@ -1,0 +1,69 @@
+
+$DominoHeader-small-z-index: 10 !default;
+$DominoHeader-small-position: absolute !default;
+$DominoHeader-small-top: 0 !default;
+$DominoHeader-small-background-color: rgba(#FFF,0.95) !default;
+$DominoHeader-small-height: 50px !default;
+$DominoHeader-small-box-shadow: inset 0 0 0 0 rgba(#FFF, 0.05) !default;
+
+$DominoHeader-medium-z-index: $DominoHeader-small-z-index !default;
+$DominoHeader-medium-position: $DominoHeader-small-position !default;
+$DominoHeader-medium-top: $DominoHeader-small-top !default;
+$DominoHeader-medium-background-color: $DominoHeader-small-background-color !default;
+$DominoHeader-medium-height: 70px !default;
+$DominoHeader-medium-box-shadow: $DominoHeader-small-box-shadow;
+
+$DominoHeader-large-z-index: $DominoHeader-medium-z-index !default;
+$DominoHeader-large-position: $DominoHeader-medium-position !default;
+$DominoHeader-large-top: $DominoHeader-medium-top !default;
+$DominoHeader-large-background-color: $DominoHeader-medium-background-color !default;
+$DominoHeader-large-height: 100px !default;
+$DominoHeader-large-box-shadow: $DominoHeader-medium-box-shadow !default;
+
+.domino-header {
+	background-color: $DominoHeader-small-background-color;
+	position: $DominoHeader-small-position;
+	top: $DominoHeader-small-top;
+	z-index: $DominoHeader-small-z-index;
+	width: 100%;
+	height: $DominoHeader-small-height;
+	-moz-box-shadow: $DominoHeader-small-box-shadow;
+	-webkit-box-shadow: $DominoHeader-small-box-shadow;
+	box-shadow: $DominoHeader-small-box-shadow;
+	
+	> .grid-x {
+		//height: 100%;
+		position: relative;
+		
+		> .cell {
+			//height: 100%;
+			position: relative;
+		}
+	}
+	
+}
+
+@media screen and #{breakpoint(medium)} {
+	.domino-header {
+		background-color: $DominoHeader-medium-background-color;
+		height: $DominoHeader-medium-height;
+		position: $DominoHeader-medium-position;
+		top: $DominoHeader-medium-top;
+		z-index: $DominoHeader-medium-z-index;
+		-moz-box-shadow: $DominoHeader-medium-box-shadow;
+		-webkit-box-shadow: $DominoHeader-medium-box-shadow;
+		box-shadow: $DominoHeader-medium-box-shadow;
+	}
+}
+@media screen and #{breakpoint(large)} {
+	.domino-header {
+		background-color: $DominoHeader-large-background-color;
+		height: $DominoHeader-large-height;
+		position: $DominoHeader-large-position;
+		top: $DominoHeader-large-top;
+		z-index: $DominoHeader-large-z-index;
+		-moz-box-shadow: $DominoHeader-large-box-shadow;
+		-webkit-box-shadow: $DominoHeader-large-box-shadow;
+		box-shadow: $DominoHeader-large-box-shadow;
+	}
+}

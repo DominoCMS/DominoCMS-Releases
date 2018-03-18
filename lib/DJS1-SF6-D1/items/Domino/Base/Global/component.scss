@@ -1,0 +1,62 @@
+$DominoBaseGlobal-body-background-color: #FFF !default;
+$DominoBaseGlobal-body-color: #000 !default;
+$DominoBaseGlobal-body-font-size: 1em !default;
+$DominoBaseGlobal-body-line-height: 1.5em !default;
+$DominoBaseGlobal-body-font-family: Arial, Helvetica, sans-serif !default;
+$DominoBaseGlobal-p-color: $DominoBaseGlobal-body-color !default;
+$DominoBaseGlobal-p-font-size: $DominoBaseGlobal-body-font-size !default;
+$DominoBaseGlobal-p-line-height: $DominoBaseGlobal-body-line-height !default;
+$DominoBaseGlobal-p-font-family: $DominoBaseGlobal-body-font-family !default;
+$DominoBaseGlobal-a-color: #666 !default;
+$DominoBaseGlobal-a-hover-color: #AAA !default;
+$DominoBaseGlobal-a-text-decoration: none !default;
+
+
+body {
+  background-color: $DominoBaseGlobal-body-background-color;
+  color: $DominoBaseGlobal-body-color;
+  margin: 0;
+  padding: 0;
+  color: $DominoBaseGlobal-body-color;
+  font-size: $DominoBaseGlobal-body-font-size;
+  line-height: $DominoBaseGlobal-body-line-height;
+  font-family: $DominoBaseGlobal-body-font-family;
+}
+
+p {
+  color: $DominoBaseGlobal-p-color;
+  font-size: $DominoBaseGlobal-p-font-size;
+  line-height: $DominoBaseGlobal-p-line-height;
+  font-family: $DominoBaseGlobal-p-font-family;
+}
+
+a {
+  color: $DominoBaseGlobal-a-color;
+  text-decoration: $DominoBaseGlobal-a-text-decoration;
+
+  &:hover {
+    color: $DominoBaseGlobal-a-hover-color;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+
+
+@media screen and #{breakpoint(medium)} {
+
+
+}
+
+
+@media screen and #{breakpoint(large)} {
+
+
+}

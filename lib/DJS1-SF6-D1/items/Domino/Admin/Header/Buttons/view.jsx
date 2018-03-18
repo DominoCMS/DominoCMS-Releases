@@ -1,0 +1,1 @@
+﻿DominoViews.registerView( 'Domino.Admin.Header.Buttons', function( data ) {	"use strict";	return <div>		<nav class="header-button">			<dt class="w40">				<a class="domino-tooltip" id="buttonModules" href="#" title="Select module">					<span class="icon-list"></span>				</a>			</dt>			<dd id="modules-list">			</dd>		</nav>	</div>});

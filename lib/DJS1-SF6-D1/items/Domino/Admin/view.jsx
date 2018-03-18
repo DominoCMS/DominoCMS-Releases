@@ -1,0 +1,1 @@
+﻿DominoViews.registerView( 'Domino.Admin', function( data ) {	"use strict";	return <div>		<div class="frontPage">			<div class="overlay">			<component view="Domino.Admin.Header" />				<component view="Domino.Admin.BreadCrumbs" />			<div id="inner" class="inner"></div>		</div>        </div>		<component view="Domino.Admin.Footer" />	</div>} );

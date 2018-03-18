@@ -1,0 +1,51 @@
+
+
+CREATE TABLE IF NOT EXISTS `DCDominoLibModulesElementsNames` (
+  `developer` varchar(255) NOT NULL,
+  `element` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `lang` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `DCDominoLibModulesElementsNames` (`developer`, `element`, `name`, `lang`) VALUES
+('Domino', 'name', 'Entry name', 'en'),
+('Domino', 'datePublish', 'Publish date', 'en'),
+('Domino', 'tabName', 'Name', 'en'),
+('Domino', 'id', 'ID', 'en'),
+('Domino', 'subtitle', 'Subtitle', 'en'),
+('Domino', 'dateVersion', 'Version date', 'en'),
+('Domino', 'version', 'Version', 'en'),
+('Domino', 'description', 'Description', 'en'),
+('Domino', 'timeStart', 'Time start', 'en'),
+('Domino', 'timeEnd', 'Time end', 'en'),
+('Domino', 'dateStart', 'Date start', 'en'),
+('Domino', 'giftRecipient', 'Gift recipient', 'en'),
+('Domino', 'isoCode', 'ISO code', 'en'),
+('Domino', 'lang', 'Language', 'en'),
+('Domino', 'db', 'Database name', 'en'),
+('Domino', 'username', 'Uporabniško ime', 'en'),
+('Domino', 'domain', 'Domain', 'en'),
+('Domino', 'icon', 'Icon', 'en'),
+('Domino', 'firstname', 'Firstname', 'en'),
+('Domino', 'surname', 'Surname', 'en'),
+('Domino', 'dateBirth', 'Birth date', 'en'),
+('Domino', 'sex', 'Sex', 'en'),
+('Domino', 'address', 'Address', 'en'),
+('Domino', 'zip', 'Zip', 'en'),
+('Domino', 'city', 'City', 'en'),
+('Domino', 'country', 'Country', 'en'),
+('Domino', 'tel', 'Telephone', 'en'),
+('Domino', 'email', 'E-mail', 'en'),
+('Domino', 'memberId', 'Member ID', 'en'),
+('Domino', 'slogan', 'Slogan', 'en'),
+('Domino', 'keyword', 'Keyword', 'en'),
+('Domino', 'mobile', 'Mobile', 'en'),
+('Domino', 'companyName', 'Company name', 'en'),
+('Domino', 'iban', 'IBAN', 'en'),
+('Domino', 'bank', 'Bank', 'en'),
+('Domino', 'swift', 'SWIFT', 'en'),
+('Domino', 'url', 'Url', 'en'),
+('Domino', 'tabContentBlocks', 'Content blocks', 'en'),
+('Domino', 'photographer', 'Photographer', 'en'),
+('Domino', 'password', 'Password', 'en');

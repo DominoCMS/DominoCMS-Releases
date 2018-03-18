@@ -1,0 +1,35 @@
+/**
+ * filename: scss/Footer.scss
+ * developer: Domino
+ * item: Footer
+ * version: v1.0.0
+ * date: 5. 6. 17
+ */
+$DominoFooter-background-color: #EEE !default;
+$DominoFooter-text-color: #AAA !default;
+$DominoFooter-link-color: #666 !default;
+$DominoFooter-link-hover-color: #333 !default;
+
+.domino-footer {
+  width: 100%;
+  background-color: $DominoFooter-background-color;
+  position: relative;
+
+  > div {
+	font-family: Arial, Helvetica, sans-serif;
+	color: $DominoFooter-text-color;
+	font-size: 0.8em;
+    line-height: 1.4em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+  }
+
+  .footer-link:link, .footer-link:visited {
+	color: $DominoFooter-link-color;
+  }
+  .footer-link:hover {
+	color: $DominoFooter-link-hover-color;
+  }
+}
+

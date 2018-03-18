@@ -1,0 +1,939 @@
+$DominoContentBlocks-white-bg-color: #FFF !default;
+$DominoContentBlocks-white-overlay-color: rgba($DominoContentBlocks-white-bg-color, 0.8) !default;
+$DominoContentBlocks-white-font-color: #444 !default;
+$DominoContentBlocks-white-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-white-font-size: 1em !default;
+$DominoContentBlocks-white-line-height: 1.6em !default;
+$DominoContentBlocks-white-margin-bottom: 1em !default;
+$DominoContentBlocks-white-p-color: $DominoContentBlocks-white-font-color !default;
+$DominoContentBlocks-white-p-font-family: $DominoContentBlocks-white-font-family !default;
+$DominoContentBlocks-white-p-font-size: $DominoContentBlocks-white-font-size !default;
+$DominoContentBlocks-white-p-line-height: $DominoContentBlocks-white-line-height !default;
+$DominoContentBlocks-white-p-margin-bottom: 1em !default;
+$DominoContentBlocks-white-a-color: $DominoContentBlocks-white-font-color !default;
+$DominoContentBlocks-white-a-hover-color: rgba($DominoContentBlocks-white-font-color, 0.7) !default;
+$DominoContentBlocks-white-h1-color: #000 !default;
+$DominoContentBlocks-white-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-white-h1-font-size: 2.5em !default;
+$DominoContentBlocks-white-h1-line-height: 1.1em !default;
+$DominoContentBlocks-white-h1-margin-bottom: 0.1em !default;
+$DominoContentBlocks-white-h2-color: $DominoContentBlocks-white-h1-color !default;
+$DominoContentBlocks-white-h2-font-family: $DominoContentBlocks-white-h1-font-family !default;
+$DominoContentBlocks-white-h2-font-size: 2em !default;
+$DominoContentBlocks-white-h2-line-height: 1.2em !default;
+$DominoContentBlocks-white-h2-margin-bottom: 0.4em !default;
+$DominoContentBlocks-white-h3-color: $DominoContentBlocks-white-h2-color !default;
+$DominoContentBlocks-white-h3-font-family: $DominoContentBlocks-white-h2-font-family !default;
+$DominoContentBlocks-white-h3-font-size: 1.7em !default;
+$DominoContentBlocks-white-h3-line-height: 1.1em !default;
+$DominoContentBlocks-white-h3-margin-bottom: 0.4em !default;
+$DominoContentBlocks-white-h4-color: $DominoContentBlocks-white-h3-color !default;
+$DominoContentBlocks-white-h4-font-family: $DominoContentBlocks-white-h3-font-family !default;
+$DominoContentBlocks-white-h4-font-size: 1.5em !default;
+$DominoContentBlocks-white-h4-line-height: 1.0em !default;
+$DominoContentBlocks-white-h4-margin-bottom: 0.4em !default;
+$DominoContentBlocks-white-h5-color: $DominoContentBlocks-white-h4-color !default;
+$DominoContentBlocks-white-h5-font-family: $DominoContentBlocks-white-h4-font-family !default;
+$DominoContentBlocks-white-h5-font-size: 1.3em !default;
+$DominoContentBlocks-white-h5-line-height: 1em !default;
+$DominoContentBlocks-white-h5-margin-bottom: 0.4em !default;
+$DominoContentBlocks-white-header-border-color: #999 !default;
+$DominoContentBlocks-white-icon-color: #999 !default;
+$DominoContentBlocks-white-meta-color: #999 !default;
+$DominoContentBlocks-white-meta-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-white-meta-font-size: 0.9em !default;
+$DominoContentBlocks-white-meta-line-height: 1em !default;
+$DominoContentBlocks-white-meta-margin-bottom: 1em !default;
+$DominoContentBlocks-white-medium-font-size: 1em !default;
+$DominoContentBlocks-white-medium-line-height: 1.6em !default;
+$DominoContentBlocks-white-medium-h1-font-size: 3em !default;
+$DominoContentBlocks-white-medium-h1-line-height: 1.1em !default;
+$DominoContentBlocks-white-medium-h2-font-size: 2em !default;
+$DominoContentBlocks-white-medium-h2-line-height: 1.2em !default;
+$DominoContentBlocks-white-medium-h3-font-size: 1.5em !default;
+$DominoContentBlocks-white-medium-h3-line-height: 1.2em !default;
+$DominoContentBlocks-white-medium-h4-font-size: 1.3em !default;
+$DominoContentBlocks-white-medium-h4-line-height: 1.2em !default;
+$DominoContentBlocks-white-medium-h5-font-size: 1.1em !default;
+$DominoContentBlocks-white-medium-h5-line-height: 1.1em !default;
+
+$DominoContentBlocks-light-bg-color: #EEE !default;
+$DominoContentBlocks-light-overlay-color: rgba($DominoContentBlocks-light-bg-color, 0.8) !default;
+$DominoContentBlocks-light-font-color: #444 !default;
+$DominoContentBlocks-light-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-light-font-size: 1em !default;
+$DominoContentBlocks-light-line-height: 1.6em !default;
+$DominoContentBlocks-light-margin-bottom: 1em !default;
+$DominoContentBlocks-light-p-color: $DominoContentBlocks-light-font-color !default;
+$DominoContentBlocks-light-p-font-family: $DominoContentBlocks-light-font-family !default;
+$DominoContentBlocks-light-p-font-size: $DominoContentBlocks-light-font-size !default;
+$DominoContentBlocks-light-p-line-height: $DominoContentBlocks-light-line-height !default;
+$DominoContentBlocks-light-p-margin-bottom: 1em !default;
+$DominoContentBlocks-light-a-color: $DominoContentBlocks-light-font-color !default;
+$DominoContentBlocks-light-a-hover-color: rgba($DominoContentBlocks-light-font-color, 0.7) !default;
+$DominoContentBlocks-light-h1-color: #000 !default;
+$DominoContentBlocks-light-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-light-h1-font-size: 2.5em !default;
+$DominoContentBlocks-light-h1-line-height: 1.1em !default;
+$DominoContentBlocks-light-h1-margin-bottom: 0.1em !default;
+$DominoContentBlocks-light-h2-color: $DominoContentBlocks-light-h1-color !default;
+$DominoContentBlocks-light-h2-font-family: $DominoContentBlocks-light-h1-font-family !default;
+$DominoContentBlocks-light-h2-font-size: 2em !default;
+$DominoContentBlocks-light-h2-line-height: 1.2em !default;
+$DominoContentBlocks-light-h2-margin-bottom: 1em !default;
+$DominoContentBlocks-light-h3-color: $DominoContentBlocks-light-h2-color !default;
+$DominoContentBlocks-light-h3-font-family: $DominoContentBlocks-light-h2-font-family !default;
+$DominoContentBlocks-light-h3-font-size: 1.7em !default;
+$DominoContentBlocks-light-h3-line-height: 1.1em !default;
+$DominoContentBlocks-light-h3-margin-bottom: 0.4em !default;
+$DominoContentBlocks-light-h4-color: $DominoContentBlocks-light-h3-color !default;
+$DominoContentBlocks-light-h4-font-family: $DominoContentBlocks-light-h3-font-family !default;
+$DominoContentBlocks-light-h4-font-size: 1.5em !default;
+$DominoContentBlocks-light-h4-line-height: 1.0em !default;
+$DominoContentBlocks-light-h4-margin-bottom: 0.4em !default;
+$DominoContentBlocks-light-h5-color: $DominoContentBlocks-light-h4-color !default;
+$DominoContentBlocks-light-h5-font-family: $DominoContentBlocks-light-h4-font-family !default;
+$DominoContentBlocks-light-h5-font-size: 1.3em !default;
+$DominoContentBlocks-light-h5-line-height: 1em !default;
+$DominoContentBlocks-light-h5-margin-bottom: 0.4em !default;
+$DominoContentBlocks-light-header-border-color: #999 !default;
+$DominoContentBlocks-light-icon-color: #666 !default;
+$DominoContentBlocks-light-meta-color: #999 !default;
+$DominoContentBlocks-light-meta-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-light-meta-font-size: 0.9em !default;
+$DominoContentBlocks-light-meta-line-height: 1em !default;
+$DominoContentBlocks-light-meta-margin-bottom: 1em !default;
+$DominoContentBlocks-light-medium-font-size: 1em !default;
+$DominoContentBlocks-light-medium-line-height: 1.6em !default;
+$DominoContentBlocks-light-medium-h1-font-size: 3em !default;
+$DominoContentBlocks-light-medium-h1-line-height: 1.1em !default;
+$DominoContentBlocks-light-medium-h2-font-size: 2em !default;
+$DominoContentBlocks-light-medium-h2-line-height: 1.2em !default;
+$DominoContentBlocks-light-medium-h3-font-size: 1.5em !default;
+$DominoContentBlocks-light-medium-h3-line-height: 1.2em !default;
+$DominoContentBlocks-light-medium-h4-font-size: 1.3em !default;
+$DominoContentBlocks-light-medium-h4-line-height: 1.2em !default;
+$DominoContentBlocks-light-medium-h5-font-size: 1.1em !default;
+$DominoContentBlocks-light-medium-h5-line-height: 1.1em !default;
+
+$DominoContentBlocks-primary-bg-color: #666 !default;
+$DominoContentBlocks-primary-overlay-color: rgba($DominoContentBlocks-primary-bg-color, 0.8) !default;
+$DominoContentBlocks-primary-font-color: #CCC !default;
+$DominoContentBlocks-primary-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-primary-font-size: 1em !default;
+$DominoContentBlocks-primary-line-height: 1.6em !default;
+$DominoContentBlocks-primary-margin-bottom: 1em !default;
+$DominoContentBlocks-primary-p-color: $DominoContentBlocks-primary-font-color !default;
+$DominoContentBlocks-primary-p-font-family: $DominoContentBlocks-primary-font-family !default;
+$DominoContentBlocks-primary-p-font-size: $DominoContentBlocks-primary-font-size !default;
+$DominoContentBlocks-primary-p-line-height: $DominoContentBlocks-primary-line-height !default;
+$DominoContentBlocks-primary-p-margin-bottom: 1em !default;
+$DominoContentBlocks-primary-a-color: $DominoContentBlocks-primary-font-color !default;
+$DominoContentBlocks-primary-a-hover-color: rgba($DominoContentBlocks-primary-font-color, 0.7) !default;
+$DominoContentBlocks-primary-h1-color: #FFF !default;
+$DominoContentBlocks-primary-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-primary-h1-font-size: 2.5em !default;
+$DominoContentBlocks-primary-h1-line-height: 1.1em !default;
+$DominoContentBlocks-primary-h1-margin-bottom: 0.1em !default;
+$DominoContentBlocks-primary-h2-color: $DominoContentBlocks-primary-h1-color !default;
+$DominoContentBlocks-primary-h2-font-family: $DominoContentBlocks-primary-h1-font-family !default;
+$DominoContentBlocks-primary-h2-font-size: 2em !default;
+$DominoContentBlocks-primary-h2-line-height: 1.2em !default;
+$DominoContentBlocks-primary-h2-margin-bottom: 0.4em !default;
+$DominoContentBlocks-primary-h3-color: $DominoContentBlocks-primary-h2-color !default;
+$DominoContentBlocks-primary-h3-font-family: $DominoContentBlocks-primary-h2-font-family !default;
+$DominoContentBlocks-primary-h3-font-size: 1.7em !default;
+$DominoContentBlocks-primary-h3-line-height: 1.1em !default;
+$DominoContentBlocks-primary-h3-margin-bottom: 0.4em !default;
+$DominoContentBlocks-primary-h4-color: $DominoContentBlocks-primary-h3-color !default;
+$DominoContentBlocks-primary-h4-font-family: $DominoContentBlocks-primary-h3-font-family !default;
+$DominoContentBlocks-primary-h4-font-size: 1.5em !default;
+$DominoContentBlocks-primary-h4-line-height: 1.0em !default;
+$DominoContentBlocks-primary-h4-margin-bottom: 0.4em !default;
+$DominoContentBlocks-primary-h5-color: $DominoContentBlocks-primary-h4-color !default;
+$DominoContentBlocks-primary-h5-font-family: $DominoContentBlocks-primary-h4-font-family !default;
+$DominoContentBlocks-primary-h5-font-size: 1.3em !default;
+$DominoContentBlocks-primary-h5-line-height: 1em !default;
+$DominoContentBlocks-primary-h5-margin-bottom: 1em !default;
+$DominoContentBlocks-primary-header-border-color: #555 !default;
+$DominoContentBlocks-primary-icon-color: #CCC !default;
+$DominoContentBlocks-primary-meta-color: #999 !default;
+$DominoContentBlocks-primary-meta-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-primary-meta-font-size: 0.9em !default;
+$DominoContentBlocks-primary-meta-line-height: 1em !default;
+$DominoContentBlocks-primary-meta-margin-bottom: 1em !default;
+$DominoContentBlocks-primary-medium-font-size: 1em !default;
+$DominoContentBlocks-primary-medium-line-height: 1.6em !default;
+$DominoContentBlocks-primary-medium-h1-font-size: 3em !default;
+$DominoContentBlocks-primary-medium-h1-line-height: 1.1em !default;
+$DominoContentBlocks-primary-medium-h2-font-size: 2em !default;
+$DominoContentBlocks-primary-medium-h2-line-height: 1.2em !default;
+$DominoContentBlocks-primary-medium-h3-font-size: 1.5em !default;
+$DominoContentBlocks-primary-medium-h3-line-height: 1.2em !default;
+$DominoContentBlocks-primary-medium-h4-font-size: 1.3em !default;
+$DominoContentBlocks-primary-medium-h4-line-height: 1.2em !default;
+$DominoContentBlocks-primary-medium-h5-font-size: 1.1em !default;
+$DominoContentBlocks-primary-medium-h5-line-height: 1.1em !default;
+
+$DominoContentBlocks-dark-bg-color: #222 !default;
+$DominoContentBlocks-dark-overlay-color: rgba($DominoContentBlocks-dark-bg-color, 0.8) !default;
+$DominoContentBlocks-dark-font-color: #CCC !default;
+$DominoContentBlocks-dark-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-dark-font-size: 1em !default;
+$DominoContentBlocks-dark-line-height: 1.6em !default;
+$DominoContentBlocks-dark-margin-bottom: 1em !default;
+$DominoContentBlocks-dark-p-color: $DominoContentBlocks-dark-font-color !default;
+$DominoContentBlocks-dark-p-font-family: $DominoContentBlocks-dark-font-family !default;
+$DominoContentBlocks-dark-p-font-size: $DominoContentBlocks-dark-font-size !default;
+$DominoContentBlocks-dark-p-line-height: $DominoContentBlocks-dark-line-height !default;
+$DominoContentBlocks-dark-p-margin-bottom: 1em !default;
+$DominoContentBlocks-dark-a-color: $DominoContentBlocks-dark-font-color !default;
+$DominoContentBlocks-dark-a-hover-color: rgba($DominoContentBlocks-dark-font-color, 0.7) !default;
+$DominoContentBlocks-dark-h1-color: #FFF !default;
+$DominoContentBlocks-dark-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-dark-h1-font-size: 2.5em !default;
+$DominoContentBlocks-dark-h1-line-height: 1.1em !default;
+$DominoContentBlocks-dark-h1-margin-bottom: 0.1em !default;
+$DominoContentBlocks-dark-h2-color: $DominoContentBlocks-dark-h1-color !default;
+$DominoContentBlocks-dark-h2-font-family: $DominoContentBlocks-dark-h1-font-family !default;
+$DominoContentBlocks-dark-h2-font-size: 2em !default;
+$DominoContentBlocks-dark-h2-line-height: 1.2em !default;
+$DominoContentBlocks-dark-h2-margin-bottom: 0.4em !default;
+$DominoContentBlocks-dark-h3-color: $DominoContentBlocks-dark-h2-color !default;
+$DominoContentBlocks-dark-h3-font-family: $DominoContentBlocks-dark-h2-font-family !default;
+$DominoContentBlocks-dark-h3-font-size: 1.7em !default;
+$DominoContentBlocks-dark-h3-line-height: 1.1em !default;
+$DominoContentBlocks-dark-h3-margin-bottom: 0.4em !default;
+$DominoContentBlocks-dark-h4-color: $DominoContentBlocks-dark-h3-color !default;
+$DominoContentBlocks-dark-h4-font-family: $DominoContentBlocks-dark-h3-font-family !default;
+$DominoContentBlocks-dark-h4-font-size: 1.5em !default;
+$DominoContentBlocks-dark-h4-line-height: 1.0em !default;
+$DominoContentBlocks-dark-h4-margin-bottom: 0.4em !default;
+$DominoContentBlocks-dark-h5-color: $DominoContentBlocks-dark-h4-color !default;
+$DominoContentBlocks-dark-h5-font-family: $DominoContentBlocks-dark-h4-font-family !default;
+$DominoContentBlocks-dark-h5-font-size: 1.1em !default;
+$DominoContentBlocks-dark-h5-line-height: 1em !default;
+$DominoContentBlocks-dark-h5-margin-bottom: 0.4em !default;
+$DominoContentBlocks-dark-header-border-color: #555 !default;
+$DominoContentBlocks-dark-icon-color: #999 !default;
+$DominoContentBlocks-dark-meta-color: #999 !default;
+$DominoContentBlocks-dark-meta-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-dark-meta-font-size: 0.9em !default;
+$DominoContentBlocks-dark-meta-line-height: 1em !default;
+$DominoContentBlocks-dark-meta-margin-bottom: 1em !default;
+$DominoContentBlocks-dark-medium-font-size: 1em !default;
+$DominoContentBlocks-dark-medium-line-height: 1.6em !default;
+$DominoContentBlocks-dark-medium-h1-font-size: 3em !default;
+$DominoContentBlocks-dark-medium-h1-line-height: 1.1em !default;
+$DominoContentBlocks-dark-medium-h2-font-size: 2em !default;
+$DominoContentBlocks-dark-medium-h2-line-height: 1.2em !default;
+$DominoContentBlocks-dark-medium-h3-font-size: 1.5em !default;
+$DominoContentBlocks-dark-medium-h3-line-height: 1.2em !default;
+$DominoContentBlocks-dark-medium-h4-font-size: 1.3em !default;
+$DominoContentBlocks-dark-medium-h4-line-height: 1.2em !default;
+$DominoContentBlocks-dark-medium-h5-font-size: 1.1em !default;
+$DominoContentBlocks-dark-medium-h5-line-height: 1.1em !default;
+
+$DominoContentBlocks-black-bg-color: #000 !default;
+$DominoContentBlocks-black-overlay-color: rgba($DominoContentBlocks-black-bg-color, 0.8) !default;
+$DominoContentBlocks-black-font-color: #CCC !default;
+$DominoContentBlocks-black-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-black-font-size: 1em !default;
+$DominoContentBlocks-black-line-height: 1.6em !default;
+$DominoContentBlocks-black-margin-bottom: 1em !default;
+$DominoContentBlocks-black-p-color: $DominoContentBlocks-black-font-color !default;
+$DominoContentBlocks-black-p-font-family: $DominoContentBlocks-black-font-color !default;
+$DominoContentBlocks-black-p-font-size: $DominoContentBlocks-black-font-size !default;
+$DominoContentBlocks-black-p-line-height: $DominoContentBlocks-black-line-height !default;
+$DominoContentBlocks-black-p-margin-bottom: 1em !default;
+$DominoContentBlocks-black-a-color: $DominoContentBlocks-black-font-color !default;
+$DominoContentBlocks-black-a-hover-color: rgba($DominoContentBlocks-black-font-color, 0.7) !default;
+$DominoContentBlocks-black-h1-color: #FFF !default;
+$DominoContentBlocks-black-h1-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-black-h1-font-size: 2.5em !default;
+$DominoContentBlocks-black-h1-line-height: 1.1em !default;
+$DominoContentBlocks-black-h1-margin-bottom: 0.2em !default;
+$DominoContentBlocks-black-h2-color: $DominoContentBlocks-black-h1-color !default;
+$DominoContentBlocks-black-h2-font-family: $DominoContentBlocks-black-h1-font-family !default;
+$DominoContentBlocks-black-h2-font-size: 2em !default;
+$DominoContentBlocks-black-h2-line-height: 1.2em !default;
+$DominoContentBlocks-black-h2-margin-bottom: 0.4em !default;
+$DominoContentBlocks-black-h3-color: $DominoContentBlocks-black-h2-color !default;
+$DominoContentBlocks-black-h3-font-family: $DominoContentBlocks-black-h2-font-family !default;
+$DominoContentBlocks-black-h3-font-size: 1.5em !default;
+$DominoContentBlocks-black-h3-line-height: 1.1em !default;
+$DominoContentBlocks-black-h3-margin-bottom: 0.4em !default;
+$DominoContentBlocks-black-h4-color: $DominoContentBlocks-black-h3-color !default;
+$DominoContentBlocks-black-h4-font-family: $DominoContentBlocks-black-h3-font-family !default;
+$DominoContentBlocks-black-h4-font-size: 1.3em !default;
+$DominoContentBlocks-black-h4-line-height: 1.0em !default;
+$DominoContentBlocks-black-h4-margin-bottom: 0.4em !default;
+$DominoContentBlocks-black-h5-color: $DominoContentBlocks-black-h4-color !default;
+$DominoContentBlocks-black-h5-font-family: $DominoContentBlocks-black-h4-font-family !default;
+$DominoContentBlocks-black-h5-font-size: 1.1em !default;
+$DominoContentBlocks-black-h5-line-height: 1em !default;
+$DominoContentBlocks-black-h5-margin-bottom: 0.4em !default;
+$DominoContentBlocks-black-header-border-color: #666 !default;
+$DominoContentBlocks-black-icon-color: #999 !default;
+$DominoContentBlocks-black-meta-color: #999 !default;
+$DominoContentBlocks-black-meta-font-family: Arial, Helvetica, sans-serif !default;
+$DominoContentBlocks-black-meta-font-size: 0.9em !default;
+$DominoContentBlocks-black-meta-line-height: 1em !default;
+$DominoContentBlocks-black-meta-margin-bottom: 1em !default;
+$DominoContentBlocks-black-medium-font-size: 1em !default;
+$DominoContentBlocks-black-medium-line-height: 1.6em !default;
+$DominoContentBlocks-black-medium-h1-font-size: 3em !default;
+$DominoContentBlocks-black-medium-h1-line-height: 1.1em !default;
+$DominoContentBlocks-black-medium-h2-font-size: 2em !default;
+$DominoContentBlocks-black-medium-h2-line-height: 1.2em !default;
+$DominoContentBlocks-black-medium-h3-font-size: 1.5em !default;
+$DominoContentBlocks-black-medium-h3-line-height: 1.2em !default;
+$DominoContentBlocks-black-medium-h4-font-size: 1.3em !default;
+$DominoContentBlocks-black-medium-h4-line-height: 1.2em !default;
+$DominoContentBlocks-black-medium-h5-font-size: 1.1em !default;
+$DominoContentBlocks-black-medium-h5-line-height: 1.1em !default;
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.domino-contentblocks {
+
+  position: relative;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+
+  .text-center,.text-right {
+    ul {
+      list-style-position: inside;
+      margin-left: 0;
+    }
+  }
+
+  .bg-cover {
+    display: block;
+    position: absolute;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    img {
+      display: none;
+      position: relative;
+    }
+  }
+  img {
+    width: 100%;
+    position: relative;
+  }
+
+  .pic-center {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .icon-big {
+    max-width: 100px;
+  }
+
+  &.hover:hover {
+    background-color: rgba(#000, 0.03);
+  }
+
+  >.overlay {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+  footer {
+    font-size: 0.9em;
+  }
+
+  &.white {
+
+    color: $DominoContentBlocks-white-font-color;
+    font-family: $DominoContentBlocks-white-font-family;
+    font-size: $DominoContentBlocks-white-font-size;
+    line-height: $DominoContentBlocks-white-line-height;
+    margin-bottom: $DominoContentBlocks-white-margin-bottom;
+    background-color: $DominoContentBlocks-white-bg-color;
+
+    p {
+      color: $DominoContentBlocks-white-p-color;
+      font-family: $DominoContentBlocks-white-p-font-family;
+      font-size: $DominoContentBlocks-white-p-font-size;
+      line-height: $DominoContentBlocks-white-p-line-height;
+      margin-bottom: $DominoContentBlocks-white-p-margin-bottom;
+    }
+
+    h1 {
+      color: $DominoContentBlocks-white-h1-color;
+      font-family: $DominoContentBlocks-white-h1-font-family;
+      font-size: $DominoContentBlocks-white-h1-font-size;
+      line-height: $DominoContentBlocks-white-h1-line-height;
+      margin-bottom: $DominoContentBlocks-white-h1-margin-bottom;
+    }
+    h2 {
+      color: $DominoContentBlocks-white-h2-color;
+      font-family: $DominoContentBlocks-white-h2-font-family;
+      font-size: $DominoContentBlocks-white-h2-font-size;
+      line-height: $DominoContentBlocks-white-h2-line-height;
+      margin-bottom: $DominoContentBlocks-white-h2-margin-bottom;
+    }
+    h3 {
+      color: $DominoContentBlocks-white-h3-color;
+      font-family: $DominoContentBlocks-white-h3-font-family;
+      font-size: $DominoContentBlocks-white-h3-font-size;
+      line-height: $DominoContentBlocks-white-h3-line-height;
+      margin-bottom: $DominoContentBlocks-white-h3-margin-bottom;
+    }
+    h4 {
+      color: $DominoContentBlocks-white-h4-color;
+      font-family: $DominoContentBlocks-white-h4-font-family;
+      font-size: $DominoContentBlocks-white-h4-font-size;
+      line-height: $DominoContentBlocks-white-h4-line-height;
+      margin-bottom: $DominoContentBlocks-white-h4-margin-bottom;
+    }
+    h5 {
+      color: $DominoContentBlocks-white-h5-color;
+      font-family: $DominoContentBlocks-white-h5-font-family;
+      font-size: $DominoContentBlocks-white-h5-font-size;
+      line-height: $DominoContentBlocks-white-h5-line-height;
+      margin-bottom: $DominoContentBlocks-white-h5-margin-bottom;
+    }
+
+    >.overlay {
+      background-color: $DominoContentBlocks-white-overlay-color;
+    }
+
+    a:not(.button) {
+      color: $DominoContentBlocks-white-a-color;
+
+      &:hover {
+        color: $DominoContentBlocks-white-a-hover-color;
+      }
+    }
+    .meta {
+      color: $DominoContentBlocks-white-meta-color;
+      font-family: $DominoContentBlocks-white-meta-font-family;
+      font-size: $DominoContentBlocks-white-meta-font-size;
+      line-height: $DominoContentBlocks-white-meta-line-height;
+      margin-bottom: $DominoContentBlocks-white-meta-margin-bottom;
+    }
+    .underline {
+      display: block;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $DominoContentBlocks-white-header-border-color;
+      margin-bottom: 0.5em;
+    }
+    span[class^="icon-"] {
+      color: $DominoContentBlocks-white-icon-color !important;
+    }
+  }
+
+  &.light {
+
+    color: $DominoContentBlocks-light-font-color;
+    font-family: $DominoContentBlocks-light-font-family;
+    font-size: $DominoContentBlocks-light-font-size;
+    line-height: $DominoContentBlocks-light-line-height;
+    margin-bottom: $DominoContentBlocks-light-margin-bottom;
+    background-color: $DominoContentBlocks-light-bg-color;
+
+    p {
+      color: $DominoContentBlocks-light-p-color;
+      font-family: $DominoContentBlocks-light-p-font-family;
+      font-size: $DominoContentBlocks-light-p-font-size;
+      line-height: $DominoContentBlocks-light-p-line-height;
+      margin-bottom: $DominoContentBlocks-light-p-margin-bottom;
+    }
+
+    h1 {
+      color: $DominoContentBlocks-light-h1-color;
+      font-family: $DominoContentBlocks-light-h1-font-family;
+      font-size: $DominoContentBlocks-light-h1-font-size;
+      line-height: $DominoContentBlocks-light-h1-line-height;
+      margin-bottom: $DominoContentBlocks-light-h1-margin-bottom;
+    }
+    h2 {
+      color: $DominoContentBlocks-light-h2-color;
+      font-family: $DominoContentBlocks-light-h2-font-family;
+      font-size: $DominoContentBlocks-light-h2-font-size;
+      line-height: $DominoContentBlocks-light-h2-line-height;
+      margin-bottom: $DominoContentBlocks-light-h2-margin-bottom;
+    }
+    h3 {
+      color: $DominoContentBlocks-light-h3-color;
+      font-family: $DominoContentBlocks-light-h3-font-family;
+      font-size: $DominoContentBlocks-light-h3-font-size;
+      line-height: $DominoContentBlocks-light-h3-line-height;
+      margin-bottom: $DominoContentBlocks-light-h3-margin-bottom;
+    }
+    h4 {
+      color: $DominoContentBlocks-light-h4-color;
+      font-family: $DominoContentBlocks-light-h4-font-family;
+      font-size: $DominoContentBlocks-light-h4-font-size;
+      line-height: $DominoContentBlocks-light-h4-line-height;
+      margin-bottom: $DominoContentBlocks-light-h4-margin-bottom;
+    }
+    h5 {
+      color: $DominoContentBlocks-light-h5-color;
+      font-family: $DominoContentBlocks-light-h5-font-family;
+      font-size: $DominoContentBlocks-light-h5-font-size;
+      line-height: $DominoContentBlocks-light-h5-line-height;
+      margin-bottom: $DominoContentBlocks-light-h5-margin-bottom;
+    }
+
+    >.overlay {
+      background-color: $DominoContentBlocks-light-overlay-color;
+    }
+
+    a:not(.button) {
+      color: $DominoContentBlocks-light-a-color;
+
+      &:hover {
+        color: $DominoContentBlocks-light-a-hover-color;
+      }
+    }
+    .meta {
+      color: $DominoContentBlocks-light-meta-color;
+      font-family: $DominoContentBlocks-light-meta-font-family;
+      font-size: $DominoContentBlocks-light-meta-font-size;
+      line-height: $DominoContentBlocks-light-meta-line-height;
+      margin-bottom: $DominoContentBlocks-light-meta-margin-bottom;
+    }
+    .underline {
+      display: block;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $DominoContentBlocks-light-header-border-color;
+      margin-bottom: 0.5em;
+    }
+    span[class^="icon-"] {
+      color: $DominoContentBlocks-light-icon-color !important;
+    }
+  }
+  &.primary {
+
+    color: $DominoContentBlocks-primary-font-color;
+    font-family: $DominoContentBlocks-primary-font-family;
+    font-size: $DominoContentBlocks-primary-font-size;
+    line-height: $DominoContentBlocks-primary-line-height;
+    margin-bottom: $DominoContentBlocks-primary-margin-bottom;
+    background-color: $DominoContentBlocks-primary-bg-color;
+
+    p {
+      color: $DominoContentBlocks-primary-p-color;
+      font-family: $DominoContentBlocks-primary-p-font-family;
+      font-size: $DominoContentBlocks-primary-p-font-size;
+      line-height: $DominoContentBlocks-primary-p-line-height;
+      margin-bottom: $DominoContentBlocks-primary-p-margin-bottom;
+    }
+
+    h1 {
+      color: $DominoContentBlocks-primary-h1-color;
+      font-family: $DominoContentBlocks-primary-h1-font-family;
+      font-size: $DominoContentBlocks-primary-h1-font-size;
+      line-height: $DominoContentBlocks-primary-h1-line-height;
+      margin-bottom: $DominoContentBlocks-primary-h1-margin-bottom;
+    }
+    h2 {
+      color: $DominoContentBlocks-primary-h2-color;
+      font-family: $DominoContentBlocks-primary-h2-font-family;
+      font-size: $DominoContentBlocks-primary-h2-font-size;
+      line-height: $DominoContentBlocks-primary-h2-line-height;
+      margin-bottom: $DominoContentBlocks-primary-h2-margin-bottom;
+    }
+    h3 {
+      color: $DominoContentBlocks-primary-h3-color;
+      font-family: $DominoContentBlocks-primary-h3-font-family;
+      font-size: $DominoContentBlocks-primary-h3-font-size;
+      line-height: $DominoContentBlocks-primary-h3-line-height;
+      margin-bottom: $DominoContentBlocks-primary-h3-margin-bottom;
+    }
+    h4 {
+      color: $DominoContentBlocks-primary-h4-color;
+      font-family: $DominoContentBlocks-primary-h4-font-family;
+      font-size: $DominoContentBlocks-primary-h4-font-size;
+      line-height: $DominoContentBlocks-primary-h4-line-height;
+      margin-bottom: $DominoContentBlocks-primary-h4-margin-bottom;
+    }
+    h5 {
+      color: $DominoContentBlocks-primary-h5-color;
+      font-family: $DominoContentBlocks-primary-h5-font-family;
+      font-size: $DominoContentBlocks-primary-h5-font-size;
+      line-height: $DominoContentBlocks-primary-h5-line-height;
+      margin-bottom: $DominoContentBlocks-primary-h5-margin-bottom;
+    }
+    >.overlay {
+      background-color: $DominoContentBlocks-primary-overlay-color;
+    }
+
+    a:not(.button) {
+      color: $DominoContentBlocks-primary-a-color;
+
+      &:hover {
+        color: $DominoContentBlocks-primary-a-hover-color;
+      }
+    }
+    .underline {
+      display: block;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $DominoContentBlocks-primary-header-border-color;
+      margin-bottom: 0.5em;
+    }
+    .meta {
+      color: $DominoContentBlocks-primary-meta-color;
+      font-family: $DominoContentBlocks-primary-meta-font-family;
+      font-size: $DominoContentBlocks-primary-meta-font-size;
+      line-height: $DominoContentBlocks-primary-meta-line-height;
+      margin-bottom: $DominoContentBlocks-primary-meta-margin-bottom;
+    }
+
+    span[class^="icon-"] {
+      color: $DominoContentBlocks-primary-icon-color !important;
+    }
+  }
+
+  &.dark {
+    color: $DominoContentBlocks-dark-font-color;
+    font-family: $DominoContentBlocks-dark-font-family;
+    font-size: $DominoContentBlocks-dark-font-size;
+    line-height: $DominoContentBlocks-dark-line-height;
+    margin-bottom: $DominoContentBlocks-dark-margin-bottom;
+    background-color: $DominoContentBlocks-dark-bg-color;
+
+    p {
+      color: $DominoContentBlocks-dark-p-color;
+      font-family: $DominoContentBlocks-dark-font-family;
+      font-size: $DominoContentBlocks-dark-font-size;
+      line-height: $DominoContentBlocks-dark-line-height;
+      margin-bottom: $DominoContentBlocks-dark-p-margin-bottom;
+    }
+
+    h1 {
+      color: $DominoContentBlocks-dark-h1-color;
+      font-family: $DominoContentBlocks-dark-h1-font-family;
+      font-size: $DominoContentBlocks-dark-h1-font-size;
+      line-height: $DominoContentBlocks-dark-h1-line-height;
+      margin-bottom: $DominoContentBlocks-dark-h1-margin-bottom;
+    }
+    h2 {
+      color: $DominoContentBlocks-dark-h2-color;
+      font-family: $DominoContentBlocks-dark-h2-font-family;
+      font-size: $DominoContentBlocks-dark-h2-font-size;
+      line-height: $DominoContentBlocks-dark-h2-line-height;
+      margin-bottom: $DominoContentBlocks-dark-h2-margin-bottom;
+    }
+    h3 {
+      color: $DominoContentBlocks-dark-h3-color;
+      font-family: $DominoContentBlocks-dark-h3-font-family;
+      font-size: $DominoContentBlocks-dark-h3-font-size;
+      line-height: $DominoContentBlocks-dark-h3-line-height;
+      margin-bottom: $DominoContentBlocks-dark-h3-margin-bottom;
+    }
+    h4 {
+      color: $DominoContentBlocks-dark-h4-color;
+      font-family: $DominoContentBlocks-dark-h4-font-family;
+      font-size: $DominoContentBlocks-dark-h4-font-size;
+      line-height: $DominoContentBlocks-dark-h4-line-height;
+      margin-bottom: $DominoContentBlocks-dark-h4-margin-bottom;
+    }
+    h5 {
+      color: $DominoContentBlocks-dark-h5-color;
+      font-family: $DominoContentBlocks-dark-h5-font-family;
+      font-size: $DominoContentBlocks-dark-h5-font-size;
+      line-height: $DominoContentBlocks-dark-h5-line-height;
+      margin-bottom: $DominoContentBlocks-dark-h5-margin-bottom;
+    }
+
+    >.overlay {
+      background-color: $DominoContentBlocks-dark-overlay-color;
+    }
+
+    a:not(.button) {
+      color: $DominoContentBlocks-dark-a-color;
+
+      &:hover {
+        color: $DominoContentBlocks-dark-a-hover-color;
+      }
+    }
+
+    .underline {
+      display: block;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $DominoContentBlocks-dark-header-border-color;
+      margin-bottom: 0.5em;
+    }
+    .meta {
+      color: $DominoContentBlocks-dark-meta-color;
+      font-family: $DominoContentBlocks-dark-meta-font-family;
+      font-size: $DominoContentBlocks-dark-meta-font-size;
+      line-height: $DominoContentBlocks-dark-meta-line-height;
+      margin-bottom: $DominoContentBlocks-dark-meta-margin-bottom;
+    }
+    span[class^="icon-"] {
+      color: $DominoContentBlocks-dark-icon-color !important;
+    }
+  }
+
+  &.black {
+    color: $DominoContentBlocks-black-font-color;
+    font-family: $DominoContentBlocks-black-font-family;
+    font-size: $DominoContentBlocks-black-font-size;
+    line-height: $DominoContentBlocks-black-line-height;
+    margin-bottom: $DominoContentBlocks-black-margin-bottom;
+    background-color: $DominoContentBlocks-black-bg-color;
+
+    p {
+      color: $DominoContentBlocks-black-p-color;
+      font-family: $DominoContentBlocks-black-font-family;
+      font-size: $DominoContentBlocks-black-font-size;
+      line-height: $DominoContentBlocks-black-line-height;
+      margin-bottom: $DominoContentBlocks-black-p-margin-bottom;
+    }
+
+    h1 {
+      color: $DominoContentBlocks-black-h1-color;
+      font-family: $DominoContentBlocks-black-h1-font-family;
+      font-size: $DominoContentBlocks-black-h1-font-size;
+      line-height: $DominoContentBlocks-black-h1-line-height;
+      margin-bottom: $DominoContentBlocks-black-h1-margin-bottom;
+    }
+    h2 {
+      color: $DominoContentBlocks-black-h2-color;
+      font-family: $DominoContentBlocks-black-h2-font-family;
+      font-size: $DominoContentBlocks-black-h2-font-size;
+      line-height: $DominoContentBlocks-black-h2-line-height;
+      margin-bottom: $DominoContentBlocks-black-h2-margin-bottom;
+    }
+    h3 {
+      color: $DominoContentBlocks-black-h3-color;
+      font-family: $DominoContentBlocks-black-h3-font-family;
+      font-size: $DominoContentBlocks-black-h3-font-size;
+      line-height: $DominoContentBlocks-black-h3-line-height;
+      margin-bottom: $DominoContentBlocks-black-h3-margin-bottom;
+    }
+    h4 {
+      color: $DominoContentBlocks-black-h4-color;
+      font-family: $DominoContentBlocks-black-h4-font-family;
+      font-size: $DominoContentBlocks-black-h4-font-size;
+      line-height: $DominoContentBlocks-black-h4-line-height;
+      margin-bottom: $DominoContentBlocks-black-h4-margin-bottom;
+    }
+    h5 {
+      color: $DominoContentBlocks-black-h5-color;
+      font-family: $DominoContentBlocks-black-h5-font-family;
+      font-size: $DominoContentBlocks-black-h5-font-size;
+      line-height: $DominoContentBlocks-black-h5-line-height;
+      margin-bottom: $DominoContentBlocks-black-h5-margin-bottom;
+    }
+
+    >.overlay {
+      background-color: $DominoContentBlocks-black-overlay-color;
+    }
+    a:not(.button) {
+      color: $DominoContentBlocks-black-a-color;
+
+      &:hover {
+        color: $DominoContentBlocks-black-a-hover-color;
+      }
+    }
+    .underline {
+      display: block;
+      padding-bottom: 0.3em;
+      border-bottom: 1px solid $DominoContentBlocks-black-header-border-color;
+      margin-bottom: 0.5em;
+    }
+    .meta {
+      color: $DominoContentBlocks-black-meta-color;
+      font-family: $DominoContentBlocks-black-meta-font-family;
+      font-size: $DominoContentBlocks-black-meta-font-size;
+      line-height: $DominoContentBlocks-black-meta-line-height;
+      margin-bottom: $DominoContentBlocks-black-meta-margin-bottom;
+    }
+
+    span[class^="icon-"] {
+      color: $DominoContentBlocks-black-icon-color !important;
+    }
+  }
+
+}
+
+@media screen and #{breakpoint(medium)} {
+
+  .domino-contentblocks {
+
+    &.white {
+
+      font-size: $DominoContentBlocks-white-medium-font-size;
+      line-height: $DominoContentBlocks-white-medium-line-height;
+
+      p {
+        font-size: $DominoContentBlocks-white-medium-font-size;
+        line-height: $DominoContentBlocks-white-medium-line-height;
+      }
+
+      h1 {
+        font-size: $DominoContentBlocks-white-medium-h1-font-size;
+        line-height: $DominoContentBlocks-white-medium-h1-line-height;
+      }
+      h2 {
+        font-size: $DominoContentBlocks-white-medium-h2-font-size;
+        line-height: $DominoContentBlocks-white-medium-h2-line-height;
+      }
+      h3 {
+        font-size: $DominoContentBlocks-white-medium-h3-font-size;
+        line-height: $DominoContentBlocks-white-medium-h3-line-height;
+      }
+      h4 {
+        font-size: $DominoContentBlocks-white-medium-h4-font-size;
+        line-height: $DominoContentBlocks-white-medium-h4-line-height;
+      }
+      h5 {
+        font-size: $DominoContentBlocks-white-medium-h5-font-size;
+        line-height: $DominoContentBlocks-white-medium-h5-line-height;
+      }
+    }
+    &.light {
+
+      font-size: $DominoContentBlocks-light-medium-font-size;
+      line-height: $DominoContentBlocks-light-medium-line-height;
+
+      p {
+        font-size: $DominoContentBlocks-light-medium-font-size;
+        line-height: $DominoContentBlocks-light-medium-line-height;
+      }
+
+      h1 {
+        font-size: $DominoContentBlocks-light-medium-h1-font-size;
+        line-height: $DominoContentBlocks-light-medium-h1-line-height;
+      }
+      h2 {
+        font-size: $DominoContentBlocks-light-medium-h2-font-size;
+        line-height: $DominoContentBlocks-light-medium-h2-line-height;
+      }
+      h3 {
+        font-size: $DominoContentBlocks-light-medium-h3-font-size;
+        line-height: $DominoContentBlocks-light-medium-h3-line-height;
+      }
+      h4 {
+        font-size: $DominoContentBlocks-light-medium-h4-font-size;
+        line-height: $DominoContentBlocks-light-medium-h4-line-height;
+      }
+      h5 {
+        font-size: $DominoContentBlocks-light-medium-h5-font-size;
+        line-height: $DominoContentBlocks-light-medium-h5-line-height;
+      }
+    }
+    &.primary {
+
+      font-size: $DominoContentBlocks-primary-medium-font-size;
+      line-height: $DominoContentBlocks-primary-medium-line-height;
+
+      p {
+        font-size: $DominoContentBlocks-primary-medium-font-size;
+        line-height: $DominoContentBlocks-primary-medium-line-height;
+      }
+
+      h1 {
+        font-size: $DominoContentBlocks-primary-medium-h1-font-size;
+        line-height: $DominoContentBlocks-primary-medium-h1-line-height;
+      }
+      h2 {
+        font-size: $DominoContentBlocks-primary-medium-h2-font-size;
+        line-height: $DominoContentBlocks-primary-medium-h2-line-height;
+      }
+      h3 {
+        font-size: $DominoContentBlocks-primary-medium-h3-font-size;
+        line-height: $DominoContentBlocks-primary-medium-h3-line-height;
+      }
+      h4 {
+        font-size: $DominoContentBlocks-primary-medium-h4-font-size;
+        line-height: $DominoContentBlocks-primary-medium-h4-line-height;
+      }
+      h5 {
+        font-size: $DominoContentBlocks-primary-medium-h5-font-size;
+        line-height: $DominoContentBlocks-primary-medium-h5-line-height;
+      }
+    }
+
+    &.dark {
+
+      font-size: $DominoContentBlocks-dark-medium-font-size;
+      line-height: $DominoContentBlocks-dark-medium-line-height;
+
+      p {
+        font-size: $DominoContentBlocks-dark-medium-font-size;
+        line-height: $DominoContentBlocks-dark-medium-line-height;
+      }
+
+      h1 {
+        font-size: $DominoContentBlocks-dark-medium-h1-font-size;
+        line-height: $DominoContentBlocks-dark-medium-h1-line-height;
+      }
+      h2 {
+        font-size: $DominoContentBlocks-dark-medium-h2-font-size;
+        line-height: $DominoContentBlocks-dark-medium-h2-line-height;
+      }
+      h3 {
+        font-size: $DominoContentBlocks-dark-medium-h3-font-size;
+        line-height: $DominoContentBlocks-dark-medium-h3-line-height;
+      }
+      h4 {
+        font-size: $DominoContentBlocks-dark-medium-h4-font-size;
+        line-height: $DominoContentBlocks-dark-medium-h4-line-height;
+      }
+      h5 {
+        font-size: $DominoContentBlocks-dark-medium-h5-font-size;
+        line-height: $DominoContentBlocks-dark-medium-h5-line-height;
+      }
+    }
+    &.black {
+
+      font-size: $DominoContentBlocks-black-medium-font-size;
+      line-height: $DominoContentBlocks-black-medium-line-height;
+
+      p {
+        font-size: $DominoContentBlocks-black-medium-font-size;
+        line-height: $DominoContentBlocks-black-medium-line-height;
+      }
+
+      h1 {
+        font-size: $DominoContentBlocks-black-medium-h1-font-size;
+        line-height: $DominoContentBlocks-black-medium-h1-line-height;
+      }
+      h2 {
+        font-size: $DominoContentBlocks-black-medium-h2-font-size;
+        line-height: $DominoContentBlocks-black-medium-h2-line-height;
+      }
+      h3 {
+        font-size: $DominoContentBlocks-black-medium-h3-font-size;
+        line-height: $DominoContentBlocks-black-medium-h3-line-height;
+      }
+      h4 {
+        font-size: $DominoContentBlocks-black-medium-h4-font-size;
+        line-height: $DominoContentBlocks-black-medium-h4-line-height;
+      }
+      h5 {
+        font-size: $DominoContentBlocks-black-medium-h5-font-size;
+        line-height: $DominoContentBlocks-black-medium-h5-line-height;
+      }
+    }
+
+  }
+}

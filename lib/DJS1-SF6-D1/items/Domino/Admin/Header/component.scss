@@ -1,0 +1,11 @@
+$DominoAdminHeader-background-color: rgba( #FFF, 0.3 ) !default;
+$DominoAdminHeader-height: 50px !default;
+
+.domino-admin-header {
+  z-index: 10;
+  background-color: $DominoAdminHeader-background-color;
+  width: 100%;
+  height: $DominoAdminHeader-height;
+  top: 0;
+  position: fixed;
+}

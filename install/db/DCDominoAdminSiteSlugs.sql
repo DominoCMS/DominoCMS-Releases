@@ -1,0 +1,47 @@
+
+
+CREATE TABLE IF NOT EXISTS `DCDominoAdminSiteSlugs` (
+  `entry` varchar(255) NOT NULL,
+  `developer` varchar(255) NOT NULL,
+  `module` varchar(255) NOT NULL,
+  `id` varchar(255) NOT NULL,
+  `lang` varchar(2) NOT NULL,
+  `urlname` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `urlpath` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `DCDominoAdminSiteSlugs` (`entry`, `developer`, `module`, `id`, `lang`, `urlname`, `name`, `urlpath`) VALUES
+('Domino.AdminContent.1', 'Domino', 'AdminContent', '1', 'en', 'home', 'Home', ''),
+('Domino.AdminContent.10', 'Domino', 'AdminContent', '10', 'en', 'sitemap', 'Sitemap', ''),
+('Domino.AdminContent.11', 'Domino', 'AdminContent', '11', 'en', 'creation-center', 'Creation center', ''),
+('Domino.AdminContent.12', 'Domino', 'AdminContent', '12', 'en', 'settings', 'Settings', '/account'),
+('Domino.AdminContent.13', 'Domino', 'AdminContent', '13', 'en', 'design', 'Design', ''),
+('Domino.AdminContent.14', 'Domino', 'AdminContent', '14', 'en', 'themes', 'Themes', '/design'),
+('Domino.AdminContent.15', 'Domino', 'AdminContent', '15', 'en', 'store', 'Store', ''),
+('Domino.AdminContent.16', 'Domino', 'AdminContent', '16', 'en', 'modules', 'Content modules', '/store'),
+('Domino.AdminContent.17', 'Domino', 'AdminContent', '17', 'en', 'modules', 'Modules', '/creationcenter'),
+('Domino.AdminContent.18', 'Domino', 'AdminContent', '18', 'en', 'items', 'Items', '/creation-center'),
+('Domino.AdminContent.19', 'Domino', 'AdminContent', '19', 'en', 'components', 'Components', '/design'),
+('Domino.AdminContent.2', 'Domino', 'AdminContent', '2', 'en', 'loading', 'Loading', ''),
+('Domino.AdminContent.20', 'Domino', 'AdminContent', '20', 'en', 'modules', 'Modules', '/design'),
+('Domino.AdminContent.21', 'Domino', 'AdminContent', '21', 'en', 'items', 'Items', '/design'),
+('Domino.AdminContent.22', 'Domino', 'AdminContent', '22', 'en', 'components', 'Components', '/store'),
+('Domino.AdminContent.23', 'Domino', 'AdminContent', '23', 'en', 'themes', 'Themes', '/store'),
+('Domino.AdminContent.24', 'Domino', 'AdminContent', '24', 'en', 'new-identity', 'New identity', '/identities'),
+('Domino.AdminContent.25', 'Domino', 'AdminContent', '25', 'en', 'moduli', 'Moduli', '/creation-center'),
+('Domino.AdminContent.26', 'Domino', 'AdminContent', '26', 'en', 'identities', 'Identities', ''),
+('Domino.AdminContent.27', 'Domino', 'AdminContent', '27', 'en', 'settings', 'Settings', ''),
+('Domino.AdminContent.28', 'Domino', 'AdminContent', '28', 'en', 'views', 'Views', '/design'),
+('Domino.AdminContent.29', 'Domino', 'AdminContent', '29', 'en', 'themes', 'Themes', '/creation-center'),
+('Domino.AdminContent.3', 'Domino', 'AdminContent', '3', 'en', 'login', 'Login', ''),
+('Domino.AdminContent.30', 'Domino', 'AdminContent', '30', 'en', 'subitems', 'Subitems', '/design'),
+('Domino.AdminContent.31', 'Domino', 'AdminContent', '31', 'en', 'views-structure', 'Views structure', '/design'),
+('Domino.AdminContent.32', 'Domino', 'AdminContent', '32', 'en', 'subitems', 'Subitems', '/creation-center'),
+('Domino.AdminContent.33', 'Domino', 'AdminContent', '33', 'en', 'templates', 'Templates', '/creation-center'),
+('Domino.AdminContent.4', 'Domino', 'AdminContent', '4', 'en', 'forgot-password', 'Forgot password', ''),
+('Domino.AdminContent.5', 'Domino', 'AdminContent', '5', 'en', 'register', 'Register', ''),
+('Domino.AdminContent.6', 'Domino', 'AdminContent', '6', 'en', 'reset-password', 'Reset password', ''),
+('Domino.AdminContent.7', 'Domino', 'AdminContent', '7', 'en', 'logout', 'Logout', ''),
+('Domino.AdminContent.8', 'Domino', 'AdminContent', '8', 'en', 'account', 'Account', ''),
+('Domino.AdminContent.9', 'Domino', 'AdminContent', '9', 'en', 'modules', 'Modules', '');

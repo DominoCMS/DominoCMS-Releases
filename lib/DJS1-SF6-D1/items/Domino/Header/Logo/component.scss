@@ -1,0 +1,126 @@
+/**
+ * filename: scss/Logo.scss
+ * developer: Domino
+ * item: Logo
+ * version: v1.0.0
+ * date: 14. 8. 17
+ */
+$DominoHeaderLogo-background-image: none !default;
+$DominoHeaderLogo-transition-time: 0.3s !default;
+$DominoHeaderLogo-opacity: 1 !default;
+$DominoHeaderLogo-opacity-hover: 0.5 !default;
+$DominoHeaderLogo-small-display: block !default;
+$DominoHeaderLogo-small-position: relative !default;
+$DominoHeaderLogo-small-top: 0 !default;
+$DominoHeaderLogo-small-z-index: 2 !default;
+$DominoHeaderLogo-small-float: left !default;
+$DominoHeaderLogo-small-background-color: transparent !default;
+$DominoHeaderLogo-small-background-size: 90% !default;
+$DominoHeaderLogo-small-hover-background-color: rgba(#000, 0) !default;
+$DominoHeaderLogo-small-width: 100px !default;
+$DominoHeaderLogo-small-height: 50px !default;
+
+$DominoHeaderLogo-medium-background-image: $DominoHeaderLogo-background-image !default;
+$DominoHeaderLogo-medium-position: relative !default;
+$DominoHeaderLogo-medium-top: 0 !default;
+$DominoHeaderLogo-medium-z-index: 2 !default;
+$DominoHeaderLogo-medium-display: block !default;
+$DominoHeaderLogo-medium-background-color: $DominoHeaderLogo-small-background-color !default;
+$DominoHeaderLogo-medium-background-size: $DominoHeaderLogo-small-background-size !default;
+$DominoHeaderLogo-medium-width: 150px !default;
+$DominoHeaderLogo-medium-height: 70px !default;
+
+$DominoHeaderLogo-large-background-image: $DominoHeaderLogo-medium-background-image !default;
+$DominoHeaderLogo-large-position: relative !default;
+$DominoHeaderLogo-large-top: 0 !default;
+$DominoHeaderLogo-large-z-index: 2 !default;
+$DominoHeaderLogo-large-display: block !default;
+$DominoHeaderLogo-large-background-color: $DominoHeaderLogo-medium-background-color !default;
+$DominoHeaderLogo-large-background-size: $DominoHeaderLogo-medium-background-size !default;
+$DominoHeaderLogo-large-width: 200px !default;
+$DominoHeaderLogo-large-height: 100px !default;
+
+.domino-header {
+
+  .logo {
+    width: $DominoHeaderLogo-small-width;
+    height: $DominoHeaderLogo-small-height;
+    background-color: $DominoHeaderLogo-small-background-color;
+    float: $DominoHeaderLogo-small-float;
+    position: $DominoHeaderLogo-small-position;
+    top: $DominoHeaderLogo-small-top;
+    z-index: $DominoHeaderLogo-small-z-index;
+    display: $DominoHeaderLogo-small-display;
+    -webkit-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+    -moz-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+    -ms-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+    -o-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+    transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+
+    a {
+      background-image: $DominoHeaderLogo-background-image;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: $DominoHeaderLogo-small-background-size;
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: relative;
+      -webkit-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+      -moz-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+      -ms-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+      -o-transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+      transition: all $DominoHeaderLogo-transition-time Ease-In-Out;
+      opacity: $DominoHeaderLogo-opacity;
+
+      &:hover {
+        opacity: $DominoHeaderLogo-opacity-hover;
+      }
+    }
+
+    &:hover {
+      background-color: $DominoHeaderLogo-small-hover-background-color;
+    }
+  }
+}
+
+@media screen and #{breakpoint(medium)} {
+
+  .domino-header {
+    .logo {
+      z-index: $DominoHeaderLogo-medium-z-index;
+      position: $DominoHeaderLogo-medium-position;
+      top: $DominoHeaderLogo-small-top;
+      background-color: $DominoHeaderLogo-medium-background-color;
+      width: $DominoHeaderLogo-medium-width;
+      height: $DominoHeaderLogo-medium-height;
+      display: $DominoHeaderLogo-medium-display;
+
+      a {
+        background-image: $DominoHeaderLogo-medium-background-image;
+        background-size: $DominoHeaderLogo-medium-background-size;
+      }
+    }
+  }
+}
+
+
+@media screen and #{breakpoint(large)} {
+  .domino-header {
+    .logo {
+      z-index: $DominoHeaderLogo-large-z-index;
+      position: $DominoHeaderLogo-large-position;
+      top: $DominoHeaderLogo-large-top;
+      background-color: $DominoHeaderLogo-large-background-color;
+      width: $DominoHeaderLogo-large-width;
+      height: $DominoHeaderLogo-large-height;
+      display: $DominoHeaderLogo-large-display;
+
+      a {
+        background-image: $DominoHeaderLogo-large-background-image;
+        background-size: $DominoHeaderLogo-large-background-size;
+      }
+    }
+  }
+}
+

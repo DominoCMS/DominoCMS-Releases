@@ -1,0 +1,43 @@
+
+$DominoEntryEditTitle-bg-color: rgba(#000,0.65) !default;
+$DominoEntryEditTitle-li-color: #FFF !default;
+$DominoEntryEditTitle-li-font-family: Arial, Helvetica, sans-serif !default;
+$DominoEntryEditTitle-li-font-size: 11px !default;
+$DominoEntryEditTitle-li-line-height: 17px !default;
+$DominoEntryEditTitle-li-padding: 5px 0 15px 20px !default;
+$DominoEntryEditTitle-li-title-color: rgba(#FFF,0.7) !default;
+$DominoEntryEditTitle-li-title-padding: 15px 0 0 20px !default;
+
+.domino-entryedit-title {
+  background-color: $DominoEntryEditTitle-bg-color;
+  width: 100%;
+  float: left;
+  display: block;
+
+  dd {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      float: left;
+
+      li {
+        font-size: $DominoEntryEditTitle-li-font-size;
+        line-height: $DominoEntryEditTitle-li-line-height;
+        color: $DominoEntryEditTitle-li-color;
+        font-family: $DominoEntryEditTitle-li-font-family;
+        padding: $DominoEntryEditTitle-li-padding;
+        list-style: none;
+
+        &.tl {
+          color: $DominoEntryEditTitle-li-title-color;
+          padding: $DominoEntryEditTitle-li-title-padding;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,258 @@
+$DominoAdminHeaderButton-margin: 5px 0 0 0 !default;
+$DominoAdminHeaderButton-dt-height: 40px !default;
+$DominoAdminHeaderButton-dt-font-size: 12px !default;
+$DominoAdminHeaderButton-dt-line-height: 20px !default;
+$DominoAdminHeaderButton-dt-color: #FFF !default;
+$DominoAdminHeaderButton-dt-box-shadow: inset 1px 0 0 0 rgba( #FFF, 0.05 ), inset -1px 0 0 0 rgba( #000, 0.05), 0 0 0 0 !default;
+$DominoAdminHeaderButton-dt-hover-color: rgba( #FFF, 0.7 ) !default;
+$DominoAdminHeaderButton-dt-hover-background-color: rgba( #000, 0.05) !default;
+$DominoAdminHeaderButton-dt-transition: all 0.3s Ease-In-Out !default;
+$DominoAdminHeaderButton-dt-disabled-color: rgba( #FFF, 0.4 ) !default;
+$DominoAdminHeaderButton-dt-disabled-hover-color: rgba( #FFF, 0.5 ) !default;
+$DominoAdminHeaderButton-dt-icon-font-size: 16px !default;
+$DominoAdminHeaderButton-dt-icon-line-height: 16px !default;
+$DominoAdminHeaderButton-dt-icon-padding: 12px 12px 0 12px !default;
+$DominoAdminHeaderButton-dt-image-background-color: rgba( #000, 0.2) !default;
+$DominoAdminHeaderButton-dt-image-width: 39px !default;
+$DominoAdminHeaderButton-dt-image-height: 39px !default;
+$DominoAdminHeaderButton-dt-image-border: 1px solid #FFF !default;
+$DominoAdminHeaderButton-dt-image-box-shadow: inset 1px 1px 0 0 rgba( #000, 0.3 ), inset -1px -1px 0 0 rgba( #000, 0.3 ), 0 0 0 0 !default;
+$DominoAdminHeaderButton-dt-name-color: #FFF !default;
+$DominoAdminHeaderButton-dt-name-font-size: 14px !default;
+$DominoAdminHeaderButton-dt-name-line-height: 20px !default;
+$DominoAdminHeaderButton-dt-name-padding: 10px 0 0 10px !default;
+$DominoAdminHeaderButton-dt-name-hover-color: rgba( #FFF, 0.7 ) !default;
+$DominoAdminHeaderButton-dt-i-margin: 10px 0 0 0 !default;
+
+$DominoAdminHeaderButton-dd-top: 50px !default;
+$DominoAdminHeaderButton-dd-width: 200px !default;
+$DominoAdminHeaderButton-dd-li-font-family: $font-family-main !default;
+$DominoAdminHeaderButton-dd-li-font-size: 14px !default;
+$DominoAdminHeaderButton-dd-li-line-height: 20px !default;
+$DominoAdminHeaderButton-dd-li-color: #FFF !default;
+$DominoAdminHeaderButton-dd-li-padding: 7px 10px !default;
+$DominoAdminHeaderButton-dd-li-background-color: rgba(#FFF, 0.3) !default;
+
+$DominoAdminHeaderButton-dd-li-hover-color: rgba(#FFF, 0.6) !default;
+$DominoAdminHeaderButton-dd-li-hover-background-color: rgba(#FFF, 0.2) !default;
+
+$DominoAdminHeaderButton-dd-li-icon-color: rgba(#FFF, 0.6) !default;
+$DominoAdminHeaderButton-dd-li-icon-margin: 0 10px 0 0 !default;
+
+
+.domino-admin-header {
+
+  .header-button {
+    margin: $DominoAdminHeaderButton-margin;
+    float: left;
+
+    dt {
+      margin: 0;
+      padding: 0;
+      height: $DominoAdminHeaderButton-dt-height;
+      position: relative;
+
+      &.search {
+        margin: 0;
+        padding: 0;
+        display: none;
+      }
+
+      a {
+        font-size: $DominoAdminHeaderButton-dt-font-size;
+        line-height: $DominoAdminHeaderButton-dt-line-height;
+        color: $DominoAdminHeaderButton-dt-color;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+        -moz-box-shadow: $DominoAdminHeaderButton-dt-box-shadow;
+        -webkit-box-shadow: $DominoAdminHeaderButton-dt-box-shadow;
+        box-shadow: $DominoAdminHeaderButton-dt-box-shadow;
+        -webkit-transition: $DominoAdminHeaderButton-dt-transition;
+        -moz-transition: $DominoAdminHeaderButton-dt-transition;
+        -ms-transition: $DominoAdminHeaderButton-dt-transition;
+        -o-transition: $DominoAdminHeaderButton-dt-transition;
+        transition: $DominoAdminHeaderButton-dt-transition;
+
+        &:hover {
+          color: $DominoAdminHeaderButton-dt-hover-color;
+          background-color: $DominoAdminHeaderButton-dt-hover-background-color;
+
+          span.name {
+            -webkit-transition: $DominoAdminHeaderButton-dt-transition;
+            -moz-transition: $DominoAdminHeaderButton-dt-transition;
+            -ms-transition: $DominoAdminHeaderButton-dt-transition;
+            -o-transition: $DominoAdminHeaderButton-dt-transition;
+            transition: $DominoAdminHeaderButton-dt-transition;
+            color: $DominoAdminHeaderButton-dt-name-hover-color;
+          }
+
+        }
+
+        &.disabled {
+          color: $DominoAdminHeaderButton-dt-disabled-color;
+          cursor: default;
+
+          &:hover {
+            color: $DominoAdminHeaderButton-dt-disabled-hover-color;
+          }
+        }
+
+
+
+        span[class*=icon-] {
+          font-size: $DominoAdminHeaderButton-dt-icon-font-size;
+          line-height: $DominoAdminHeaderButton-dt-icon-line-height;
+          padding: $DominoAdminHeaderButton-dt-icon-padding;
+          display: block;
+          float: left;
+        }
+
+        span.image {
+          background-color: $DominoAdminHeaderButton-dt-image-background-color;
+          background-position: 50% 50%;
+          width: $DominoAdminHeaderButton-dt-image-width;
+          height: $DominoAdminHeaderButton-dt-image-height;
+          display: none;
+          background-repeat: no-repeat;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          float: left;
+          border: $DominoAdminHeaderButton-dt-image-border;
+          -moz-box-shadow: $DominoAdminHeaderButton-dt-image-box-shadow;
+          -webkit-box-shadow: $DominoAdminHeaderButton-dt-image-box-shadow;
+          box-shadow: $DominoAdminHeaderButton-dt-image-box-shadow;
+        }
+
+        span.name {
+          font-size: $DominoAdminHeaderButton-dt-name-font-size;
+          line-height: $DominoAdminHeaderButton-dt-name-line-height;
+          color: $DominoAdminHeaderButton-dt-name-color;
+          padding: $DominoAdminHeaderButton-dt-name-padding;
+          display: none;
+          float: left;
+          -webkit-transition: $DominoAdminHeaderButton-dt-transition;
+          -moz-transition: $DominoAdminHeaderButton-dt-transition;
+          -ms-transition: $DominoAdminHeaderButton-dt-transition;
+          -o-transition: $DominoAdminHeaderButton-dt-transition;
+          transition: $DominoAdminHeaderButton-dt-transition;
+        }
+
+        i {
+          font-style: normal;
+          margin: $DominoAdminHeaderButton-dt-i-margin;
+          display: inline-block;
+        }
+      }
+    }
+
+    dd {
+      margin: 0;
+      top: $DominoAdminHeaderButton-dd-top;
+      padding: 0;
+      z-index: 10;
+      position: absolute;
+      display: none;
+      max-height: 80vh;
+      overflow: scroll;
+
+      ul {
+        margin: 0;
+        padding: 0;
+        width: $DominoAdminHeaderButton-dd-width;
+        float: left;
+        list-style: none;
+
+        li {
+          width: 100%;
+          position: relative;
+
+          a {
+            font-family: $DominoAdminHeaderButton-dd-li-font-family;
+            font-size: $DominoAdminHeaderButton-dd-li-font-size;
+            line-height: $DominoAdminHeaderButton-dd-li-line-height;
+            color: $DominoAdminHeaderButton-dd-li-color;
+            padding: $DominoAdminHeaderButton-dd-li-padding;
+            display: block;
+            background-color: $DominoAdminHeaderButton-dd-li-background-color;
+
+            &:hover {
+              color: $DominoAdminHeaderButton-dd-li-hover-color;
+              background-color: $DominoAdminHeaderButton-dd-li-hover-background-color;
+            }
+
+            span.abc {
+              font-size: 16px;
+              line-height: 22px;
+              top: 10px;
+              left: 10px;
+              position: absolute;
+            }
+
+            span[class*=icon-] {
+              color: $DominoAdminHeaderButton-dd-li-icon-color;
+              margin: $DominoAdminHeaderButton-dd-li-icon-margin;
+            }
+          }
+        }
+      }
+
+      &.search {
+        padding: 0;
+        margin: 0 0 0 20px;
+        display: block;
+        position: relative;
+
+        ul {
+          margin: 0;
+          padding: 0;
+          display: block;
+        }
+      }
+    }
+
+    &.right {
+      float: right;
+
+      dd {
+        right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $break-medium ) {
+  .domino-admin-header {
+    .header-button {
+
+      dt {
+        a {
+          span.name, span.image {
+            display: block;
+          }
+        }
+      }
+
+    }
+  }
+
+}
+@media screen and (min-width: $break-large ) {
+
+  .domino-admin-header {
+    .header-button {
+
+
+      &.src {
+        width: auto;
+
+        input {
+          width: 250px;
+        }
+      }
+
+    }
+  }
+}

@@ -1,0 +1,735 @@
+/**
+ * filename: scss/MenuMain.scss
+ * developer: Domino
+ * item: MenuMain
+ * version: v1.0.0
+ * date: 14. 8. 17
+ */
+$DominoHeaderMenuMain-small-width: 100% !default;
+$DominoHeaderMenuMain-small-float: none !default;
+$DominoHeaderMenuMain-small-z-index: inherit !default;
+$DominoHeaderMenuMain-small-position: absolute !default;
+$DominoHeaderMenuMain-small-top: 0 !default;
+$DominoHeaderMenuMain-small-height: 0 !default;
+$DominoHeaderMenuMain-small-background-color: transparent !default;
+$DominoHeaderMenuMain-small-padding-top: 0 !default;
+$DominoHeaderMenuMain-small-padding-bottom: $DominoHeaderMenuMain-small-padding-top !default;
+$DominoHeaderMenuMain-small-margin-top: 0 !default;
+
+$DominoHeaderMenuMain-small-button-display: block !default;
+$DominoHeaderMenuMain-small-button-color: #000 !default;
+$DominoHeaderMenuMain-small-button-hover-color: #666 !default;
+$DominoHeaderMenuMain-small-button-background-color: transparent !default;
+$DominoHeaderMenuMain-small-button-hover-background-color: rgba(#000, 0.05) !default;
+$DominoHeaderMenuMain-small-button-active-color: #FFF !default;
+$DominoHeaderMenuMain-small-button-active-background-color: rgba(#000, 1) !default;
+$DominoHeaderMenuMain-small-button-font-size: 18px !default;
+$DominoHeaderMenuMain-small-button-line-height: 18px !default;
+$DominoHeaderMenuMain-small-button-padding: 15px 18px !default;
+
+$DominoHeaderMenuMain-small-ul-hidden-display: none !default;
+$DominoHeaderMenuMain-small-ul-hideformed-display: block !default;
+$DominoHeaderMenuMain-small-ul-position: absolute !default;
+$DominoHeaderMenuMain-small-ul-top: 50px !default;
+$DominoHeaderMenuMain-small-ul-background-color: rgba(#000, 0.95) !default;
+$DominoHeaderMenuMain-small-ul-li-width: 100% !default;
+$DominoHeaderMenuMain-small-ul-li-float: none !default;
+$DominoHeaderMenuMain-small-ul-a-padding-top: 15px !default;
+$DominoHeaderMenuMain-small-ul-a-padding-bottom: $DominoHeaderMenuMain-small-ul-a-padding-top !default;
+$DominoHeaderMenuMain-small-ul-a-padding-left: 25px !default;
+$DominoHeaderMenuMain-small-ul-a-padding-right: $DominoHeaderMenuMain-small-ul-a-padding-left !default;
+$DominoHeaderMenuMain-small-ul-a-color: #FFF !default;
+$DominoHeaderMenuMain-small-ul-a-background-color: transparent !default;
+$DominoHeaderMenuMain-small-ul-a-font-family: Arial, Helvetica, sans-serif !default;
+$DominoHeaderMenuMain-small-ul-a-font-size: 18px !default;
+$DominoHeaderMenuMain-small-ul-a-line-height: 20px !default;
+$DominoHeaderMenuMain-small-ul-a-transition: all 0.3s Ease-In-Out !default;
+$DominoHeaderMenuMain-small-ul-a-text-align: center !default;
+$DominoHeaderMenuMain-small-ul-a-box-shadow: inset 0 -1px 0 0 rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-a-icon-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-a-icon-margin: 0 5px 0 0 !default;
+$DominoHeaderMenuMain-small-ul-a-icon-display: inline !default;
+$DominoHeaderMenuMain-small-ul-a-hover-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-a-hover-background-color: rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-a-hover-box-shadow: inset 0 -1px 0 0 rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-a-hover-icon-color: #FFF !default;
+$DominoHeaderMenuMain-small-ul-a-active-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-a-active-background-color: rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-a-active-box-shadow: inset 0 -1px 0 0 rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-a-active-icon-color: #FFF !default;
+
+$DominoHeaderMenuMain-small-ul-arrow-display: block !default;
+$DominoHeaderMenuMain-small-ul-arrow-padding-top: 15px !default;
+$DominoHeaderMenuMain-small-ul-arrow-padding-bottom: $DominoHeaderMenuMain-small-ul-arrow-padding-top !default;
+$DominoHeaderMenuMain-small-ul-arrow-padding-left: 25px !default;
+$DominoHeaderMenuMain-small-ul-arrow-padding-right: $DominoHeaderMenuMain-small-ul-arrow-padding-left !default;
+$DominoHeaderMenuMain-small-ul-arrow-color: #FFF !default;
+$DominoHeaderMenuMain-small-ul-arrow-hover-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-arrow-background-color: transparent !default;
+$DominoHeaderMenuMain-small-ul-arrow-background-hover-color: rgba(#FFF, 0.05) !default;
+$DominoHeaderMenuMain-small-ul-arrow-font-size: 18px !default;
+$DominoHeaderMenuMain-small-ul-arrow-line-height: 20px !default;
+
+$DominoHeaderMenuMain-small-ul-dropdown-position: relative !default;
+$DominoHeaderMenuMain-small-ul-dropdown-hidden-display: none !default;
+$DominoHeaderMenuMain-small-ul-dropdown-width: 100% !default;
+$DominoHeaderMenuMain-small-ul-dropdown-background-color: rgba(#333, 0.95) !default;
+$DominoHeaderMenuMain-small-ul-dropdown-text-align: center !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-color: #FFF !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-font-family: Arial, Helvetica, sans-serif !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-font-size: 18px !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-line-height: 20px !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-icon-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-icon-margin: 0 5px 0 0 !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-icon-display: inline !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-hover-color: #999 !default;
+$DominoHeaderMenuMain-small-ul-dropdown-a-hover-icon-color: #999 !default;
+
+// medium
+$DominoHeaderMenuMain-medium-position: absolute !default;
+$DominoHeaderMenuMain-medium-width: 100% !default;
+$DominoHeaderMenuMain-medium-height: 50px !default;
+$DominoHeaderMenuMain-medium-float: $DominoHeaderMenuMain-small-float !default;
+$DominoHeaderMenuMain-medium-padding-top: 0 !default;
+$DominoHeaderMenuMain-medium-padding-bottom: $DominoHeaderMenuMain-medium-padding-top !default;
+$DominoHeaderMenuMain-medium-margin-left: 0 !default;
+$DominoHeaderMenuMain-medium-margin-top: 0 !default;
+$DominoHeaderMenuMain-medium-background-color: rgba(#000, 0.8) !default;
+$DominoHeaderMenuMain-medium-top: 100px !default;
+$DominoHeaderMenuMain-medium-ul-top: 0 !default;
+$DominoHeaderMenuMain-medium-ul-background-color: transparent !default;
+
+$DominoHeaderMenuMain-medium-button-display: none !default;
+
+$DominoHeaderMenuMain-medium-ul-hidden-display: block !default;
+$DominoHeaderMenuMain-medium-ul-hideformed-display: none !default;
+$DominoHeaderMenuMain-medium-ul-position: relative !default;
+$DominoHeaderMenuMain-medium-ul-top: 0 !default;
+$DominoHeaderMenuMain-medium-ul-li-width: auto !default;
+$DominoHeaderMenuMain-medium-ul-li-float: left !default;
+$DominoHeaderMenuMain-medium-ul-a-padding-top: 15px !default;
+$DominoHeaderMenuMain-medium-ul-a-padding-bottom: $DominoHeaderMenuMain-medium-ul-a-padding-top !default;
+$DominoHeaderMenuMain-medium-ul-a-padding-left: 25px !default;
+$DominoHeaderMenuMain-medium-ul-a-padding-right: $DominoHeaderMenuMain-medium-ul-a-padding-left !default;
+$DominoHeaderMenuMain-medium-ul-a-color: #FFF !default;
+$DominoHeaderMenuMain-medium-ul-a-background-color: transparent !default;
+$DominoHeaderMenuMain-medium-ul-a-font-family: $DominoHeaderMenuMain-small-ul-a-font-family !default;
+$DominoHeaderMenuMain-medium-ul-a-font-size: 18px !default;
+$DominoHeaderMenuMain-medium-ul-a-line-height: 20px !default;
+$DominoHeaderMenuMain-medium-ul-a-transition: all 0.3s Ease-In-Out !default;
+$DominoHeaderMenuMain-medium-ul-a-text-align: center !default;
+$DominoHeaderMenuMain-medium-ul-a-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-icon-color: #999 !default;
+$DominoHeaderMenuMain-medium-ul-a-icon-margin: 0 0 5px 0 !default;
+$DominoHeaderMenuMain-medium-ul-a-icon-display: block !default;
+$DominoHeaderMenuMain-medium-ul-a-hover-color: #666 !default;
+$DominoHeaderMenuMain-medium-ul-a-hover-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-hover-background-color: rgba(#000, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-hover-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-hover-icon-color: #FFF !default;
+$DominoHeaderMenuMain-medium-ul-a-active-color: #666 !default;
+$DominoHeaderMenuMain-medium-ul-a-active-background-color: rgba(#000, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-active-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-medium-ul-a-active-icon-color: #FFF !default;
+
+$DominoHeaderMenuMain-medium-ul-arrow-display: none !default;
+
+$DominoHeaderMenuMain-medium-ul-dropdown-position: absolute !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-hidden-display: none !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-width: 250px !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-background-color: rgba(#000, 0.95) !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-text-align: left !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-a-color: #FFF !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-a-hover-color: #999 !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-a-font-family: Arial, Helvetica, sans-serif !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-a-font-size: 18px !default;
+$DominoHeaderMenuMain-medium-ul-dropdown-a-line-height: 20px !default;
+
+// large
+$DominoHeaderMenuMain-large-position: absolute !default;
+$DominoHeaderMenuMain-large-width: 100% !default;
+$DominoHeaderMenuMain-large-height: 50px !default;
+$DominoHeaderMenuMain-large-float: $DominoHeaderMenuMain-small-float !default;
+$DominoHeaderMenuMain-large-padding-top: 0 !default;
+$DominoHeaderMenuMain-large-padding-bottom: $DominoHeaderMenuMain-large-padding-top !default;
+$DominoHeaderMenuMain-large-margin-left: 0 !default;
+$DominoHeaderMenuMain-large-margin-top: 0 !default;
+$DominoHeaderMenuMain-large-background-color: rgba(#000, 0.8) !default;
+$DominoHeaderMenuMain-large-top: 100px !default;
+$DominoHeaderMenuMain-large-ul-top: 0 !default;
+$DominoHeaderMenuMain-large-ul-background-color: transparent !default;
+
+$DominoHeaderMenuMain-large-button-display: none !default;
+
+$DominoHeaderMenuMain-large-ul-hidden-display: block !default;
+$DominoHeaderMenuMain-large-ul-hideformed-display: none !default;
+$DominoHeaderMenuMain-large-ul-position: relative !default;
+$DominoHeaderMenuMain-large-ul-top: 0 !default;
+$DominoHeaderMenuMain-large-ul-li-width: auto !default;
+$DominoHeaderMenuMain-large-ul-li-float: left !default;
+$DominoHeaderMenuMain-large-ul-a-padding-top: 15px !default;
+$DominoHeaderMenuMain-large-ul-a-padding-bottom: $DominoHeaderMenuMain-large-ul-a-padding-top !default;
+$DominoHeaderMenuMain-large-ul-a-padding-left: 25px !default;
+$DominoHeaderMenuMain-large-ul-a-padding-right: $DominoHeaderMenuMain-large-ul-a-padding-left !default;
+$DominoHeaderMenuMain-large-ul-a-color: #FFF !default;
+$DominoHeaderMenuMain-large-ul-a-background-color: transparent !default;
+$DominoHeaderMenuMain-large-ul-a-font-family: $DominoHeaderMenuMain-small-ul-a-font-family !default;
+$DominoHeaderMenuMain-large-ul-a-font-size: 18px !default;
+$DominoHeaderMenuMain-large-ul-a-line-height: 20px !default;
+$DominoHeaderMenuMain-large-ul-a-transition: all 0.3s Ease-In-Out !default;
+$DominoHeaderMenuMain-large-ul-a-text-align: center !default;
+$DominoHeaderMenuMain-large-ul-a-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-icon-color: #999 !default;
+$DominoHeaderMenuMain-large-ul-a-icon-margin: 0 0 5px 0 !default;
+$DominoHeaderMenuMain-large-ul-a-icon-display: block !default;
+$DominoHeaderMenuMain-large-ul-a-hover-color: #666 !default;
+$DominoHeaderMenuMain-large-ul-a-hover-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-hover-background-color: rgba(#000, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-hover-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-hover-icon-color: #FFF !default;
+$DominoHeaderMenuMain-large-ul-a-active-color: #666 !default;
+$DominoHeaderMenuMain-large-ul-a-active-background-color: rgba(#000, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-active-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0.05) !default;
+$DominoHeaderMenuMain-large-ul-a-active-icon-color: #FFF !default;
+
+$DominoHeaderMenuMain-large-ul-arrow-display: none !default;
+
+$DominoHeaderMenuMain-large-ul-dropdown-position: absolute !default;
+$DominoHeaderMenuMain-large-ul-dropdown-hidden-display: none !default;
+$DominoHeaderMenuMain-large-ul-dropdown-width: 250px !default;
+$DominoHeaderMenuMain-large-ul-dropdown-background-color: rgba(#000, 0.95) !default;
+$DominoHeaderMenuMain-large-ul-dropdown-text-align: left !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-color: #FFF !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-hover-color: #999 !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-hover-background-color: rgba(#000, 0.02) !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-font-family: Arial, Helvetica, sans-serif !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-font-size: 18px !default;
+$DominoHeaderMenuMain-large-ul-dropdown-a-line-height: 20px !default;
+
+.domino-header {
+
+  .menumain {
+    width: $DominoHeaderMenuMain-small-width;
+    height: $DominoHeaderMenuMain-small-height;
+    float: $DominoHeaderMenuMain-small-float;
+    background-color: $DominoHeaderMenuMain-small-background-color;
+    position: $DominoHeaderMenuMain-small-position;
+    top: $DominoHeaderMenuMain-small-top;
+    z-index: $DominoHeaderMenuMain-small-z-index;
+    margin-top: $DominoHeaderMenuMain-small-margin-top;
+    padding-top: $DominoHeaderMenuMain-small-padding-top;
+    padding-bottom: $DominoHeaderMenuMain-small-padding-bottom;
+    box-sizing: border-box;
+    left: 0;
+
+    &.fullHeight {
+      > ul {
+        height: 100%;
+
+        > li {
+          height: 100%;
+          display: table;
+
+          > a {
+            display: table-cell;
+            vertical-align: middle;
+            height: 100%;
+            line-height: 100%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    a, span {
+      -webkit-transition: $DominoHeaderMenuMain-small-ul-a-transition;
+      -moz-transition: $DominoHeaderMenuMain-small-ul-a-transition;
+      -ms-transition: $DominoHeaderMenuMain-small-ul-a-transition;
+      -o-transition: $DominoHeaderMenuMain-small-ul-a-transition;
+      transition: $DominoHeaderMenuMain-small-ul-a-transition;
+    }
+
+    button {
+      float: right;
+      display: $DominoHeaderMenuMain-small-button-display;
+      position: relative;
+      background-color: $DominoHeaderMenuMain-small-button-background-color;
+      color: $DominoHeaderMenuMain-small-button-color;
+      font-size: $DominoHeaderMenuMain-small-button-font-size;
+      line-height: $DominoHeaderMenuMain-small-button-line-height;
+      padding: $DominoHeaderMenuMain-small-button-padding;
+      border-radius: 0;
+      -webkit-border-radius: 0;
+
+      &:hover {
+        color: $DominoHeaderMenuMain-small-button-hover-color;
+        background-color: $DominoHeaderMenuMain-small-button-hover-background-color;
+      }
+
+      &:active {
+        color: $DominoHeaderMenuMain-small-button-active-color;
+        background-color: $DominoHeaderMenuMain-small-button-active-background-color;
+      }
+
+    }
+
+    > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      background-color: $DominoHeaderMenuMain-small-ul-background-color;
+      position: $DominoHeaderMenuMain-small-ul-position;
+      top: $DominoHeaderMenuMain-small-ul-top;
+      display: block;
+      text-align: $DominoHeaderMenuMain-small-ul-a-text-align;
+
+      &.hidden {
+        display: $DominoHeaderMenuMain-small-ul-hidden-display;
+      }
+
+      > .hide-for-medium {
+        display: $DominoHeaderMenuMain-small-ul-hideformed-display;
+      }
+
+      > li, > div > li {
+        float: $DominoHeaderMenuMain-small-ul-li-float;
+        display: block;
+        position: relative;
+        width: $DominoHeaderMenuMain-small-ul-li-width;
+
+        > a {
+          display: block;
+          font-family: $DominoHeaderMenuMain-small-ul-a-font-family;
+          font-size: $DominoHeaderMenuMain-small-ul-a-font-size;
+          line-height: $DominoHeaderMenuMain-small-ul-a-line-height;
+          color: $DominoHeaderMenuMain-small-ul-a-color;
+          padding-top: $DominoHeaderMenuMain-small-ul-a-padding-top;
+          padding-bottom: $DominoHeaderMenuMain-small-ul-a-padding-bottom;
+          padding-left: $DominoHeaderMenuMain-small-ul-a-padding-left;
+          padding-right: $DominoHeaderMenuMain-small-ul-a-padding-right;
+          position: relative;
+
+          -moz-box-shadow: $DominoHeaderMenuMain-small-ul-a-box-shadow;
+          -webkit-box-shadow: $DominoHeaderMenuMain-small-ul-a-box-shadow;
+          box-shadow: $DominoHeaderMenuMain-small-ul-a-box-shadow;
+
+          &:hover, &.hover {
+            color: $DominoHeaderMenuMain-small-ul-a-hover-color;
+            background-color: $DominoHeaderMenuMain-small-ul-a-hover-background-color;
+            -moz-box-shadow: $DominoHeaderMenuMain-small-ul-a-hover-box-shadow;
+            -webkit-box-shadow: $DominoHeaderMenuMain-small-ul-a-hover-box-shadow;
+            box-shadow: $DominoHeaderMenuMain-small-ul-a-hover-box-shadow;
+
+            .icon {
+              color: $DominoHeaderMenuMain-small-ul-a-hover-icon-color;
+            }
+          }
+
+          .icon {
+            margin: $DominoHeaderMenuMain-small-ul-a-icon-margin;
+            color: $DominoHeaderMenuMain-small-ul-a-icon-color;
+            display: $DominoHeaderMenuMain-small-ul-a-icon-display;
+          }
+
+        }
+
+        &.active {
+          > a {
+            color: $DominoHeaderMenuMain-small-ul-a-active-color;
+            background-color: $DominoHeaderMenuMain-small-ul-a-active-background-color;
+            -moz-box-shadow: $DominoHeaderMenuMain-small-ul-a-active-box-shadow;
+            -webkit-box-shadow: $DominoHeaderMenuMain-small-ul-a-active-box-shadow;
+            box-shadow: $DominoHeaderMenuMain-small-ul-a-active-box-shadow;
+            .icon {
+              color: $DominoHeaderMenuMain-small-ul-a-active-icon-color;
+            }
+          }
+        }
+
+        .arrow {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          z-index: 2;
+          right: 0;
+          font-size: $DominoHeaderMenuMain-small-ul-arrow-font-size;
+          line-height: $DominoHeaderMenuMain-small-ul-arrow-line-height;
+          color: $DominoHeaderMenuMain-small-ul-arrow-color;
+          padding-top: $DominoHeaderMenuMain-small-ul-arrow-padding-top;
+          padding-bottom: $DominoHeaderMenuMain-small-ul-arrow-padding-bottom;
+          padding-left: $DominoHeaderMenuMain-small-ul-arrow-padding-left;
+          padding-right: $DominoHeaderMenuMain-small-ul-arrow-padding-right;
+          display: $DominoHeaderMenuMain-small-ul-arrow-display;
+
+          &:hover {
+            color: $DominoHeaderMenuMain-small-ul-arrow-hover-color;
+            background-color: $DominoHeaderMenuMain-small-ul-arrow-background-hover-color;
+          }
+
+        }
+
+        &:first-child a {
+          -moz-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0);
+          -webkit-box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: inset 1px 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        ul.dropdown {
+          z-index: 1001;
+          background-color: $DominoHeaderMenuMain-small-ul-dropdown-background-color;
+          top: 100%;
+          position: $DominoHeaderMenuMain-small-ul-dropdown-position;
+          display: block;
+          margin: 0;
+          padding: 0;
+          z-index: 1001;
+          width: $DominoHeaderMenuMain-small-ul-dropdown-width;
+          list-style: none;
+
+          &.hidden {
+            display: $DominoHeaderMenuMain-small-ul-dropdown-hidden-display;
+          }
+
+          li {
+            width: 100%;
+            position: relative;
+            display: block;
+            font-size: 14px;
+            line-height: 14px;
+            vertical-align: middle;
+
+            a {
+              color: $DominoHeaderMenuMain-small-ul-dropdown-a-color;
+              font-family: $DominoHeaderMenuMain-small-ul-dropdown-a-font-family;
+              font-size: $DominoHeaderMenuMain-small-ul-dropdown-a-font-size;
+              line-height: $DominoHeaderMenuMain-small-ul-dropdown-a-line-height;
+              padding: 12px 10px;
+              display: block;
+              position: relative;
+
+              &:hover {
+                color: $DominoHeaderMenuMain-small-ul-dropdown-a-hover-color;
+                background-color: rgba(#000, 0.2);
+                .icon {
+                  color: $DominoHeaderMenuMain-small-ul-dropdown-a-hover-icon-color;
+                }
+              }
+
+              .icon {
+                margin: $DominoHeaderMenuMain-small-ul-dropdown-a-icon-margin;
+                color: $DominoHeaderMenuMain-small-ul-dropdown-a-icon-color;
+                display: $DominoHeaderMenuMain-small-ul-dropdown-a-icon-display;
+              }
+              .arrow {
+                float: right;
+                font-size: 12px;
+              }
+            }
+
+            ul {
+              margin: 0;
+              padding: 0;
+              //background-color: $DominoHeaderMenuMain-small-ul-dropdown-background-color;
+              width: $DominoHeaderMenuMain-small-ul-dropdown-width;
+              top: 0;
+              left: 0;
+              list-style: none;
+              position: relative;
+
+              &.hidden {
+                display: none;
+              }
+
+              li {
+                //background-color: rgba(#000, 0.2);
+
+                a {
+
+                  &:hover {
+                    //background-color: rgba(#000, 0.2);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and #{breakpoint(medium)} {
+  .domino-header {
+    .menumain {
+      position: $DominoHeaderMenuMain-medium-position;
+      width: $DominoHeaderMenuMain-medium-width;
+      height: $DominoHeaderMenuMain-medium-height;
+      float: $DominoHeaderMenuMain-medium-float;
+      background-color: $DominoHeaderMenuMain-medium-background-color;
+      margin-left: $DominoHeaderMenuMain-medium-margin-left;
+      margin-top: $DominoHeaderMenuMain-medium-margin-top;
+      padding-top: $DominoHeaderMenuMain-medium-padding-top;
+      padding-bottom: $DominoHeaderMenuMain-medium-padding-bottom;
+      top: $DominoHeaderMenuMain-medium-top;
+
+      button {
+        display: $DominoHeaderMenuMain-medium-button-display;
+      }
+
+      > ul {
+        background-color: $DominoHeaderMenuMain-medium-ul-background-color;
+        position: $DominoHeaderMenuMain-medium-ul-position;
+        display: block;
+        top: $DominoHeaderMenuMain-medium-ul-top;
+
+        &:after {
+          display: block;
+          clear: both;
+        }
+
+        &.hidden {
+          display: $DominoHeaderMenuMain-medium-ul-hidden-display;
+        }
+
+        > .hide-for-medium {
+          display: $DominoHeaderMenuMain-medium-ul-hideformed-display;
+        }
+
+        > li {
+          float: $DominoHeaderMenuMain-medium-ul-li-float;
+          width: $DominoHeaderMenuMain-medium-ul-li-width;
+          left: 0;
+
+          > a {
+            display: block;
+            text-align: $DominoHeaderMenuMain-medium-ul-a-text-align;
+            font-family: $DominoHeaderMenuMain-medium-ul-a-font-family;
+            font-size: $DominoHeaderMenuMain-medium-ul-a-font-size;
+            line-height: $DominoHeaderMenuMain-medium-ul-a-line-height;
+            color: $DominoHeaderMenuMain-medium-ul-a-color;
+            background-color: $DominoHeaderMenuMain-medium-ul-a-background-color;
+            padding-top: $DominoHeaderMenuMain-medium-ul-a-padding-top;
+            padding-bottom: $DominoHeaderMenuMain-medium-ul-a-padding-bottom;
+            padding-left: $DominoHeaderMenuMain-medium-ul-a-padding-left;
+            padding-right: $DominoHeaderMenuMain-medium-ul-a-padding-right;
+            position: relative;
+
+            -moz-box-shadow: $DominoHeaderMenuMain-medium-ul-a-box-shadow;
+            -webkit-box-shadow: $DominoHeaderMenuMain-medium-ul-a-box-shadow;
+            box-shadow: $DominoHeaderMenuMain-medium-ul-a-box-shadow;
+
+            &:hover, &.hover {
+              color: $DominoHeaderMenuMain-medium-ul-a-hover-color;
+              background-color: $DominoHeaderMenuMain-medium-ul-a-hover-background-color;
+              -moz-box-shadow: $DominoHeaderMenuMain-medium-ul-a-box-shadow;
+              -webkit-box-shadow: $DominoHeaderMenuMain-medium-ul-a-hover-box-shadow;
+              box-shadow: $DominoHeaderMenuMain-medium-ul-a-hover-box-shadow;
+              .icon {
+                color: $DominoHeaderMenuMain-medium-ul-a-hover-icon-color;
+              }
+            }
+            .icon {
+              margin: $DominoHeaderMenuMain-medium-ul-a-icon-margin;
+              color: $DominoHeaderMenuMain-medium-ul-a-icon-color;
+              display: $DominoHeaderMenuMain-medium-ul-a-icon-display;
+            }
+
+          }
+          &.active {
+            > a {
+              color: $DominoHeaderMenuMain-medium-ul-a-active-color;
+              background-color: $DominoHeaderMenuMain-medium-ul-a-active-background-color;
+              -moz-box-shadow: $DominoHeaderMenuMain-medium-ul-a-active-box-shadow;
+              -webkit-box-shadow: $DominoHeaderMenuMain-medium-ul-a-active-box-shadow;
+              box-shadow: $DominoHeaderMenuMain-medium-ul-a-active-box-shadow;
+              .icon {
+                color: $DominoHeaderMenuMain-medium-ul-a-active-icon-color;
+              }
+            }
+          }
+          &:last-child > .dropdown {
+            //right: 0;
+          }
+
+          .arrow {
+            display: $DominoHeaderMenuMain-medium-ul-arrow-display;
+          }
+
+          ul.dropdown {
+            background-color: $DominoHeaderMenuMain-medium-ul-dropdown-background-color;
+            text-align: $DominoHeaderMenuMain-medium-ul-dropdown-text-align;
+            width: $DominoHeaderMenuMain-medium-ul-dropdown-width;
+            position: $DominoHeaderMenuMain-medium-ul-dropdown-position;
+            float: $DominoHeaderMenuMain-medium-ul-li-float;
+
+            &.hidden {
+              display: $DominoHeaderMenuMain-medium-ul-dropdown-hidden-display;
+            }
+
+
+            li {
+              a {
+                color: $DominoHeaderMenuMain-medium-ul-dropdown-a-color;
+                font-family: $DominoHeaderMenuMain-medium-ul-dropdown-a-font-family;
+                font-size: $DominoHeaderMenuMain-medium-ul-dropdown-a-font-size;
+                line-height: $DominoHeaderMenuMain-medium-ul-dropdown-a-line-height;
+                background-color: $DominoHeaderMenuMain-medium-ul-a-background-color;
+
+                &:hover, &.hover {
+                  color: $DominoHeaderMenuMain-medium-ul-a-hover-color;
+                  background-color: $DominoHeaderMenuMain-medium-ul-a-hover-background-color;
+                  -moz-box-shadow: $DominoHeaderMenuMain-medium-ul-a-box-shadow;
+                  -webkit-box-shadow: $DominoHeaderMenuMain-medium-ul-a-hover-box-shadow;
+                  box-shadow: $DominoHeaderMenuMain-medium-ul-a-hover-box-shadow;
+                  .icon {
+                    color: $DominoHeaderMenuMain-medium-ul-a-hover-icon-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and #{breakpoint(large)} {
+  .domino-header {
+    .menumain {
+      position: $DominoHeaderMenuMain-large-position;
+      width: $DominoHeaderMenuMain-large-width;
+      height: $DominoHeaderMenuMain-large-height;
+      float: $DominoHeaderMenuMain-large-float;
+      background-color: $DominoHeaderMenuMain-large-background-color;
+      margin-left: $DominoHeaderMenuMain-large-margin-left;
+      margin-top: $DominoHeaderMenuMain-large-margin-top;
+      padding-top: $DominoHeaderMenuMain-large-padding-top;
+      padding-bottom: $DominoHeaderMenuMain-large-padding-bottom;
+      top: $DominoHeaderMenuMain-large-top;
+
+      button {
+        display: $DominoHeaderMenuMain-large-button-display;
+      }
+
+      > ul {
+        background-color: $DominoHeaderMenuMain-large-ul-background-color;
+        position: $DominoHeaderMenuMain-large-ul-position;
+        display: block;
+        top: $DominoHeaderMenuMain-large-ul-top;
+
+        &:after {
+          display: block;
+          clear: both;
+        }
+
+        &.hidden {
+          display: $DominoHeaderMenuMain-large-ul-hidden-display;
+        }
+
+        > .hide-for-medium {
+          display: $DominoHeaderMenuMain-large-ul-hideformed-display;
+        }
+
+        > li {
+          float: $DominoHeaderMenuMain-large-ul-li-float;
+          width: $DominoHeaderMenuMain-large-ul-li-width;
+          left: 0;
+
+          > a {
+            display: block;
+            text-align: $DominoHeaderMenuMain-large-ul-a-text-align;
+            font-family: $DominoHeaderMenuMain-large-ul-a-font-family;
+            font-size: $DominoHeaderMenuMain-large-ul-a-font-size;
+            line-height: $DominoHeaderMenuMain-large-ul-a-line-height;
+            color: $DominoHeaderMenuMain-large-ul-a-color;
+            background-color: $DominoHeaderMenuMain-large-ul-a-background-color;
+            padding-top: $DominoHeaderMenuMain-large-ul-a-padding-top;
+            padding-bottom: $DominoHeaderMenuMain-large-ul-a-padding-bottom;
+            padding-left: $DominoHeaderMenuMain-large-ul-a-padding-left;
+            padding-right: $DominoHeaderMenuMain-large-ul-a-padding-right;
+            position: relative;
+
+            -moz-box-shadow: $DominoHeaderMenuMain-large-ul-a-box-shadow;
+            -webkit-box-shadow: $DominoHeaderMenuMain-large-ul-a-box-shadow;
+            box-shadow: $DominoHeaderMenuMain-large-ul-a-box-shadow;
+
+            &:hover, &.hover {
+              color: $DominoHeaderMenuMain-large-ul-a-hover-color;
+              background-color: $DominoHeaderMenuMain-large-ul-a-hover-background-color;
+              -moz-box-shadow: $DominoHeaderMenuMain-large-ul-a-box-shadow;
+              -webkit-box-shadow: $DominoHeaderMenuMain-large-ul-a-hover-box-shadow;
+              box-shadow: $DominoHeaderMenuMain-large-ul-a-hover-box-shadow;
+              .icon {
+                color: $DominoHeaderMenuMain-large-ul-a-hover-icon-color;
+              }
+            }
+            .icon {
+              margin: $DominoHeaderMenuMain-large-ul-a-icon-margin;
+              color: $DominoHeaderMenuMain-large-ul-a-icon-color;
+              display: $DominoHeaderMenuMain-large-ul-a-icon-display;
+            }
+
+          }
+
+          &.active {
+            > a {
+              color: $DominoHeaderMenuMain-large-ul-a-active-color;
+              background-color: $DominoHeaderMenuMain-large-ul-a-active-background-color;
+              -moz-box-shadow: $DominoHeaderMenuMain-large-ul-a-active-box-shadow;
+              -webkit-box-shadow: $DominoHeaderMenuMain-large-ul-a-active-box-shadow;
+              box-shadow: $DominoHeaderMenuMain-large-ul-a-active-box-shadow;
+              .icon {
+                color: $DominoHeaderMenuMain-large-ul-a-active-icon-color;
+              }
+            }
+          }
+          &:last-child > .dropdown {
+            //right: 0;
+          }
+          .arrow {
+            display: $DominoHeaderMenuMain-large-ul-arrow-display;
+          }
+
+          ul.dropdown {
+            background-color: $DominoHeaderMenuMain-large-ul-dropdown-background-color;
+            text-align: $DominoHeaderMenuMain-large-ul-dropdown-text-align;
+            width: $DominoHeaderMenuMain-large-ul-dropdown-width;
+            position: $DominoHeaderMenuMain-large-ul-dropdown-position;
+            float: $DominoHeaderMenuMain-large-ul-li-float;
+
+            &.hidden {
+              display: $DominoHeaderMenuMain-large-ul-dropdown-hidden-display;
+            }
+
+            li {
+              a {
+                color: $DominoHeaderMenuMain-large-ul-dropdown-a-color;
+                font-family: $DominoHeaderMenuMain-large-ul-dropdown-a-font-family;
+                font-size: $DominoHeaderMenuMain-large-ul-dropdown-a-font-size;
+                line-height: $DominoHeaderMenuMain-large-ul-dropdown-a-line-height;
+                background-color: $DominoHeaderMenuMain-large-ul-a-background-color;
+
+                &:hover, &.hover {
+                  color: $DominoHeaderMenuMain-large-ul-dropdown-a-hover-color;
+                  background-color: $DominoHeaderMenuMain-large-ul-dropdown-a-hover-background-color;
+
+                  .icon {
+                    color: $DominoHeaderMenuMain-large-ul-a-hover-icon-color;
+                  }
+                }
+
+              }
+              ul {
+                left: 100%;
+                position: absolute;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}

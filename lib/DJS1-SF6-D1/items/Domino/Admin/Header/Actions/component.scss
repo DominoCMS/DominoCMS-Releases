@@ -1,0 +1,213 @@
+$DominoAdminHeaderActions-margin: 5px 0 0 0 !default;
+$DominoAdminHeaderActions-dt-height: 40px !default;
+$DominoAdminHeaderActions-dt-font-size: 12px !default;
+$DominoAdminHeaderActions-dt-line-height: 20px !default;
+$DominoAdminHeaderActions-dt-color: #FFF !default;
+$DominoAdminHeaderActions-dt-box-shadow: inset 1px 0 0 0 rgba( #FFF, 0.05 ), inset -1px 0 0 0 rgba( #000, 0.05), 0 0 0 0 !default;
+$DominoAdminHeaderActions-dt-hover-color: rgba( #FFF, 0.7 ) !default;
+$DominoAdminHeaderActions-dt-hover-background-color: rgba( #000, 0.05) !default;
+$DominoAdminHeaderActions-dt-transition: all 0.3s Ease-In-Out !default;
+$DominoAdminHeaderActions-dt-disabled-color: rgba( #FFF, 0.4 ) !default;
+$DominoAdminHeaderActions-dt-disabled-hover-color: rgba( #FFF, 0.5 ) !default;
+$DominoAdminHeaderActions-dt-icon-font-size: 16px !default;
+$DominoAdminHeaderActions-dt-icon-line-height: 16px !default;
+$DominoAdminHeaderActions-dt-icon-padding: 12px 12px 0 12px !default;
+$DominoAdminHeaderActions-dt-image-background-color: rgba( #000, 0.2) !default;
+$DominoAdminHeaderActions-dt-image-width: 39px !default;
+$DominoAdminHeaderActions-dt-image-height: 39px !default;
+$DominoAdminHeaderActions-dt-image-border: 1px solid #FFF !default;
+$DominoAdminHeaderActions-dt-image-box-shadow: inset 1px 1px 0 0 rgba( #000, 0.3 ), inset -1px -1px 0 0 rgba( #000, 0.3 ), 0 0 0 0 !default;
+$DominoAdminHeaderActions-dt-name-color: #FFF !default;
+$DominoAdminHeaderActions-dt-name-font-size: 14px !default;
+$DominoAdminHeaderActions-dt-name-line-height: 20px !default;
+$DominoAdminHeaderActions-dt-name-padding: 10px 0 0 10px !default;
+$DominoAdminHeaderActions-dt-name-hover-color: rgba( #FFF, 0.7 ) !default;
+$DominoAdminHeaderActions-dt-i-margin: 10px 0 0 0 !default;
+
+$DominoAdminHeaderActions-dd-top: 50px !default;
+$DominoAdminHeaderActions-dd-width: 200px !default;
+$DominoAdminHeaderActions-dd-min-width: 80px !default;
+$DominoAdminHeaderActions-dd-li-font-family: $font-family-main !default;
+$DominoAdminHeaderActions-dd-li-font-size: 14px !default;
+$DominoAdminHeaderActions-dd-li-line-height: 20px !default;
+$DominoAdminHeaderActions-dd-li-color: #FFF !default;
+$DominoAdminHeaderActions-dd-li-padding: 10px 10px !default;
+$DominoAdminHeaderActions-dd-li-background-color: rgba(#FFF, 0.3) !default;
+
+$DominoAdminHeaderActions-dd-li-hover-color: rgba(#FFF, 0.6) !default;
+$DominoAdminHeaderActions-dd-li-hover-background-color: rgba(#FFF, 0.2) !default;
+
+$DominoAdminHeaderActions-dd-li-icon-color: rgba(#FFF, 0.6) !default;
+$DominoAdminHeaderActions-dd-li-icon-margin: 0 10px 0 0 !default;
+
+.domino-admin-header {
+
+  .deploy {
+    margin: $DominoAdminHeaderActions-margin;
+    float: left;
+
+    dt {
+      margin: 0;
+      padding: 0;
+      height: $DominoAdminHeaderActions-dt-height;
+      position: relative;
+      display: block;
+
+      a {
+        font-size: $DominoAdminHeaderActions-dt-font-size;
+        line-height: $DominoAdminHeaderActions-dt-line-height;
+        color: $DominoAdminHeaderActions-dt-color;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: block;
+        -moz-box-shadow: $DominoAdminHeaderActions-dt-box-shadow;
+        -webkit-box-shadow: $DominoAdminHeaderActions-dt-box-shadow;
+        box-shadow: $DominoAdminHeaderActions-dt-box-shadow;
+        -webkit-transition: $DominoAdminHeaderActions-dt-transition;
+        -moz-transition: $DominoAdminHeaderActions-dt-transition;
+        -ms-transition: $DominoAdminHeaderActions-dt-transition;
+        -o-transition: $DominoAdminHeaderActions-dt-transition;
+        transition: $DominoAdminHeaderActions-dt-transition;
+
+        &:hover {
+          color: $DominoAdminHeaderActions-dt-hover-color;
+          background-color: $DominoAdminHeaderActions-dt-hover-background-color;
+
+          span.name {
+            -webkit-transition: $DominoAdminHeaderActions-dt-transition;
+            -moz-transition: $DominoAdminHeaderActions-dt-transition;
+            -ms-transition: $DominoAdminHeaderActions-dt-transition;
+            -o-transition: $DominoAdminHeaderActions-dt-transition;
+            transition: $DominoAdminHeaderActions-dt-transition;
+            color: $DominoAdminHeaderActions-dt-name-hover-color;
+          }
+
+        }
+
+        span[class*=icon-] {
+          font-size: $DominoAdminHeaderActions-dt-icon-font-size;
+          line-height: $DominoAdminHeaderActions-dt-icon-line-height;
+          padding: $DominoAdminHeaderActions-dt-icon-padding;
+          display: block;
+          float: left;
+        }
+      }
+    }
+
+    dd {
+      margin: 0;
+      top: $DominoAdminHeaderActions-dd-top;
+      padding: 0;
+      z-index: 10;
+      position: absolute;
+      max-height: 80vh;
+      overflow: scroll;
+
+      ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+        //width: $DominoAdminHeaderActions-dd-width;
+        min-width: $DominoAdminHeaderActions-dd-min-width;
+        float: left;
+        list-style: none;
+
+        &.hide {
+          display: none;
+        }
+
+
+        li {
+          width: 100%;
+          position: relative;
+
+          a {
+            font-family: $DominoAdminHeaderActions-dd-li-font-family;
+            font-size: $DominoAdminHeaderActions-dd-li-font-size;
+            line-height: $DominoAdminHeaderActions-dd-li-line-height;
+            color: $DominoAdminHeaderActions-dd-li-color;
+            padding: $DominoAdminHeaderActions-dd-li-padding;
+            display: block;
+            background-color: $DominoAdminHeaderActions-dd-li-background-color;
+            -webkit-transition: $DominoAdminHeaderActions-dt-transition;
+            -moz-transition: $DominoAdminHeaderActions-dt-transition;
+            -ms-transition: $DominoAdminHeaderActions-dt-transition;
+            -o-transition: $DominoAdminHeaderActions-dt-transition;
+            transition: $DominoAdminHeaderActions-dt-transition;
+
+            &:hover {
+              color: $DominoAdminHeaderActions-dd-li-hover-color;
+              background-color: $DominoAdminHeaderActions-dd-li-hover-background-color;
+            }
+
+            span[class*=icon-] {
+              color: $DominoAdminHeaderActions-dd-li-icon-color;
+              margin: $DominoAdminHeaderActions-dd-li-icon-margin;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $break-medium ) {
+  .domino-admin-header {
+    .deploy {
+
+      dt {
+        display: none;
+        a {
+          span.name {
+            display: block;
+          }
+        }
+      }
+
+      dd {
+        top: 5px;
+
+        ul {
+          display: block;
+
+          &.hide {
+            display: block;
+          }
+
+          li {
+            float: left;
+            width: auto;
+            a {
+              background-color: transparent;
+
+              &:hover {
+                background-color: rgba( #FFF, 0.1 );
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+
+}
+@media screen and (min-width: $break-large ) {
+
+  .domino-admin-header {
+    .deploy {
+
+
+      &.src {
+        width: auto;
+
+        input {
+          width: 250px;
+        }
+      }
+
+    }
+  }
+}

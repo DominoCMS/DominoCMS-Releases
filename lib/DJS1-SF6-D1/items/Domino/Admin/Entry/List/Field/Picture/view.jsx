@@ -1,0 +1,1 @@
+﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.Picture', function( data ) {	"use strict";	return <span>		{ (function () {			var ret = [];			if ( data.data.filename )				ret.push(<img src={ data.data.filename } />);			return ret;		})() }	</span>});

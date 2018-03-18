@@ -1,0 +1,50 @@
+
+
+CREATE TABLE IF NOT EXISTS `DCDominoAdminContent` (
+  `id` varchar(255) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `subtitle` varchar(255) NOT NULL,
+  `content` text NOT NULL,
+  `content2` text NOT NULL,
+  `metaTitle` varchar(255) NOT NULL,
+  `metaDescription` varchar(255) NOT NULL,
+  `metaKeywords` varchar(255) NOT NULL,
+  `url` varchar(255) NOT NULL,
+  `lang` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `DCDominoAdminContent` (`id`, `name`, `subtitle`, `content`, `content2`, `metaTitle`, `metaDescription`, `metaKeywords`, `url`, `lang`) VALUES
+('1', 'Home', '', '', '', '', '', '', '', 'en'),
+('10', 'Sitemap', '', '', '', '', '', '', '', 'en'),
+('11', 'Creation center', 'Create and manage your library', '', '', '', '', '', '', 'en'),
+('12', 'Settings', '', '', '', '', '', '', '', 'en'),
+('13', 'Design', 'Create your site', '', '', '', '', '', '', 'en'),
+('14', 'Themes', '', '', '', '', '', '', '', 'en'),
+('15', 'Store', 'Everything you need', '', '', '', '', '', '', 'en'),
+('16', 'Modules', '', '', '', '', '', '', '', 'en'),
+('17', 'Modules', '', '', '', '', '', '', '', 'en'),
+('18', 'Items', '', '', '', '', '', '', '', 'en'),
+('19', 'Components', '', '', '', '', '', '', '', 'en'),
+('2', 'Nalaganje', '', '', '', '', '', '', '', 'en'),
+('20', 'Modules', '', '', '', '', '', '', '', 'en'),
+('21', 'Items', '', '', '', '', '', '', '', 'en'),
+('22', 'Components', '', '', '', '', '', '', '', 'en'),
+('23', 'Themes', '', '', '', '', '', '', '', 'en'),
+('24', 'New identity', '', '', '', '', '', '', '', 'en'),
+('25', 'Modules', '', '', '', '', '', '', '', 'en'),
+('26', 'Identities', '', '', '', '', '', '', '', 'en'),
+('27', 'Settings', '', '', '', '', '', '', '', 'en'),
+('28', 'Views', '', '', '', '', '', '', '', 'en'),
+('29', 'Themes', '', '', '', '', '', '', '', 'en'),
+('3', 'Login', '', '', '', '', '', '', '', 'en'),
+('30', 'Subitems', '', '', '', '', '', '', '', 'en'),
+('31', 'Views structure', '', '', '', '', '', '', '', 'en'),
+('32', 'Subitems', '', '', '', '', '', '', '', 'en'),
+('33', 'Templates', '', '', '', '', '', '', '', 'en'),
+('4', 'Forgot password', '', '', '', '', '', '', '', 'en'),
+('5', 'Register', '', '', '', '', '', '', '', 'en'),
+('6', 'Reset password', '', '', '', '', '', '', '', 'en'),
+('7', 'Logout', '', '', '', '', '', '', '', 'en'),
+('8', 'Account', '', '', '', '', '', '', '', 'en'),
+('9', 'Modules', 'Create and edit your content', '', '', '', '', '', '', 'en');

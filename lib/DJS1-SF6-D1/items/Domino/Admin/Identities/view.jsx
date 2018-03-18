@@ -1,0 +1,1 @@
+﻿DominoViews.registerView( 'Domino.Admin.Identities', function( data ) {	"use strict";	return <div class="grid-container">				<component view="Domino.Admin.Entry.List" componentData={ data } />			</div>} );

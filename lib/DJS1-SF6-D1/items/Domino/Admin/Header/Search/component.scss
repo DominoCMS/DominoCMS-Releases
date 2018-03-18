@@ -1,0 +1,169 @@
+$DominoAdminHeaderSearch-input-margin: 5px 0 5px 0 !default;
+$DominoAdminHeaderSearch-input-font-family: $font-family-main !default;
+$DominoAdminHeaderSearch-input-font-size: 14px !default;
+$DominoAdminHeaderSearch-input-line-height: 20px !default;
+$DominoAdminHeaderSearch-input-color: #FFF !default;
+$DominoAdminHeaderSearch-input-padding: 10px 0 10px 0 !default;
+$DominoAdminHeaderSearch-input-width: 180px !default;
+$DominoAdminHeaderSearch-input-text-indent: 10px !default;
+$DominoAdminHeaderSearch-input-text-indent: 10px !default;
+$DominoAdminHeaderSearch-input-border: 0 !default;
+$DominoAdminHeaderSearch-input-background-color: rgba( #FFF, 0.2 ) !default;
+$DominoAdminHeaderSearch-input-transition: all 0.3s Ease-In-Out !default;
+$DominoAdminHeaderSearch-input-placeholder: rgba( #FFF, 0.8 ) !default;
+$DominoAdminHeaderSearch-input-focus-background-color: rgba( #FFF, 0.4 ) !default;
+$DominoAdminHeaderSearch-input-focus-color: rgba(#000,0.9) !default;
+$DominoAdminHeaderSearch-input-focus-icon-color: rgba(#FFF, 0.8) !default;
+$DominoAdminHeaderSearch-input-focus-icon-hover-color: rgba(#FFF, 0.5) !default;
+$DominoAdminHeaderSearch-input-focus-icon-font-size: 20px !default;
+$DominoAdminHeaderSearch-input-focus-icon-line-height: 20px !default;
+$DominoAdminHeaderSearch-input-focus-icon-top: 16px !default;
+$DominoAdminHeaderSearch-input-focus-icon-left: -30px !default;
+
+$DominoAdminHeaderSearch-input-results-title-background-color: rgba( #FFF, 0.2 ) !default;
+$DominoAdminHeaderSearch-input-results-title-color: rgba( #FFF, 0.8 ) !default;
+$DominoAdminHeaderSearch-input-results-title-font-size: 14px !default;
+$DominoAdminHeaderSearch-input-results-title-padding: 0.5em 1em !default;
+
+.domino-admin-header {
+
+  .search {
+    position: relative;
+    display: block;
+    float: left;
+
+    .search-holder {
+      float: left;
+      position: relative;
+      display: block;
+
+      input {
+        margin: $DominoAdminHeaderSearch-input-margin;
+        font-family: $DominoAdminHeaderSearch-input-font-family;
+        font-size: $DominoAdminHeaderSearch-input-font-size;
+        line-height: $DominoAdminHeaderSearch-input-line-height;
+        color: $DominoAdminHeaderSearch-input-color;
+        padding: $DominoAdminHeaderSearch-input-padding;
+        width: $DominoAdminHeaderSearch-input-width;
+        text-indent: $DominoAdminHeaderSearch-input-text-indent;
+        border: $DominoAdminHeaderSearch-input-border;
+        outline: none;
+        background-color: $DominoAdminHeaderSearch-input-background-color;
+
+        box-shadow: none;
+        -webkit-transition: $DominoAdminHeaderSearch-input-transition;
+        -moz-transition: $DominoAdminHeaderSearch-input-transition;
+        -ms-transition: $DominoAdminHeaderSearch-input-transition;
+        -o-transition: $DominoAdminHeaderSearch-input-transition;
+        transition: $DominoAdminHeaderSearch-input-transition;
+
+        &::-webkit-input-placeholder {
+          color: $DominoAdminHeaderSearch-input-placeholder;
+        }
+
+        &:focus {
+          background-color: $DominoAdminHeaderSearch-input-focus-background-color;
+          color: $DominoAdminHeaderSearch-input-focus-color;
+          border: 0;
+          box-shadow: none;
+        }
+        &:focus + .results{
+          display: block;
+        }
+
+      }
+
+      .focus {
+        z-index: 10;
+        top: 0;
+        right: 0;
+        position: absolute;
+
+        .icon {
+          a {
+            font-size: $DominoAdminHeaderSearch-input-focus-icon-font-size;
+            line-height: $DominoAdminHeaderSearch-input-focus-icon-line-height;
+            color: $DominoAdminHeaderSearch-input-focus-icon-color;
+            top: $DominoAdminHeaderSearch-input-focus-icon-top;
+            left: $DominoAdminHeaderSearch-input-focus-icon-left;
+            position: absolute;
+
+            &:hover {
+              color: $DominoAdminHeaderSearch-input-focus-icon-color;
+            }
+          }
+        }
+      }
+
+      .results {
+        margin: 0;
+        padding: 0;
+        display: none;
+
+        .title {
+          background-color: $DominoAdminHeaderSearch-input-results-title-background-color;
+          color: $DominoAdminHeaderSearch-input-results-title-color;
+          font-size: $DominoAdminHeaderSearch-input-results-title-font-size;
+          display: block;
+          padding: $DominoAdminHeaderSearch-input-results-title-padding;
+        }
+
+        .entries {
+          margin: 0;
+          padding: 0;
+          display: block;
+          list-style: none;
+
+          li {
+
+            a {
+              font-size: 15px;
+              line-height: 17px;
+              display: block;
+              background-color: rgba($color-darker-blue, 0.9);
+              color: #FFF;
+              padding: 0.5em 1em 0.5em 1em;
+              -moz-box-shadow: inset 0 -1px 0 0 rgba(#000, 0.2);
+              -webkit-box-shadow: inset 0 -1px 0 0 rgba(#000, 0.2);
+              box-shadow: inset 0 -1px 0 0 rgba(#000, 0.2);
+
+              span {
+                color: $primary-color;
+                font-size: 12px;
+                line-height: 16px;
+              }
+
+              &:hover {
+                background-color: rgba($color-darker-blue, 0.95);
+                color: rgba(#FFF,0.7);
+
+                span {
+                  color: lighten($primary-color,20%);
+                }
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: $break-large ) {
+
+  .domino-admin-header {
+    .search {
+      .search-holder {
+        input {
+          width: 300px;
+
+          &:focus {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+}

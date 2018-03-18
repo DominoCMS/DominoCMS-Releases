@@ -1,0 +1,27 @@
+$DominoAdminFooter-background-color: #EEE !default;
+$DominoAdminFooter-text-color: #AAA !default;
+$DominoAdminFooter-link-color: #666 !default;
+$DominoAdminFooter-link-hover-color: #333 !default;
+
+.domino-admin-footer {
+  float: left;
+  width: 100%;
+  background-color: $DominoAdminFooter-background-color;
+
+  > div {
+	font-family: Arial, Helvetica, sans-serif;
+	color: $DominoAdminFooter-text-color;
+	font-size: 0.8em;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+  }
+
+  .footer-link:link, .footer-link:visited {
+	color: $DominoAdminFooter-link-color;
+  }
+  .footer-link:hover {
+	color: $DominoAdminFooter-link-hover-color;
+  }
+}
+

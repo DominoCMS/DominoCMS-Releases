@@ -1,0 +1,28 @@
+/**
+ * filename: scss/_HeaderSettings.scss
+ * developer: Domino
+ * item: Header
+ * version: v1.0.0
+ * date: 5. 6. 17
+ */
+// DominoHeader Theme1
+$DominoHeader-small-z-index: 10;
+$DominoHeader-small-position: absolute;
+$DominoHeader-small-top: 0;
+$DominoHeader-small-background-color: rgba(#FFF,0.95);
+$DominoHeader-small-height: 50px;
+$DominoHeader-small-box-shadow: inset 0 0 0 0 rgba(#FFF, 0.05);
+
+$DominoHeader-medium-z-index: $DominoHeader-small-z-index;
+$DominoHeader-medium-position: $DominoHeader-small-position;
+$DominoHeader-medium-top: $DominoHeader-small-top;
+$DominoHeader-medium-background-color: $DominoHeader-small-background-color;
+$DominoHeader-medium-height: 70px;
+$DominoHeader-medium-box-shadow: inset 0 0 0 0 rgba(#FFF, 0.05);
+
+$DominoHeader-large-z-index: $DominoHeader-medium-z-index;
+$DominoHeader-large-position: $DominoHeader-medium-position;
+$DominoHeader-large-top: $DominoHeader-medium-top;
+$DominoHeader-large-background-color: $DominoHeader-medium-background-color;
+$DominoHeader-large-height: 100px;
+$DominoHeader-large-box-shadow: inset 0 0 0 0 rgba(#FFF, 0.05);
