@@ -943,7 +943,7 @@ class Compiler
 
                 case self::DEBUG_INFO:
                     $annotation->lines[] = '@media -sass-debug-info{filename{font-family:"' . $file
-                                         . '"}line{font-family:' . $line . '}}';
+                        . '"}line{font-family:' . $line . '}}';
                     break;
             }
 
@@ -1472,7 +1472,7 @@ class Compiler
 
                     $shouldSet = $isDefault &&
                         (($result = $this->get($name[1], false)) === null
-                        || $result === self::$null);
+                            || $result === self::$null);
 
                     if (! $isDefault || $shouldSet) {
                         $this->set($name[1], $this->reduce($value));
@@ -1715,7 +1715,7 @@ class Compiler
 
             case Type::T_MIXIN_CONTENT:
                 $content = $this->get(self::$namespaces['special'] . 'content', false, $this->getStoreEnv())
-                         ?: $this->get(self::$namespaces['special'] . 'content', false, $this->env);
+                    ?: $this->get(self::$namespaces['special'] . 'content', false, $this->env);
 
                 if (! $content) {
                     $this->throwError('Expected @content inside of mixin');
@@ -1818,7 +1818,7 @@ class Compiler
                     return $this->shouldEval($value[2], $value[3]);
                 }
 
-                // fall-thru
+            // fall-thru
             case Type::T_VARIABLE:
             case Type::T_FUNCTION_CALL:
                 return true;
@@ -1855,7 +1855,7 @@ class Compiler
                 // special case: looks like css shorthand
                 if ($opName == 'div' && ! $inParens && ! $inExp && isset($right[2])
                     && (($right[0] !== Type::T_NUMBER && $right[2] != '')
-                    || ($right[0] === Type::T_NUMBER && ! $right->unitless()))
+                        || ($right[0] === Type::T_NUMBER && ! $right->unitless()))
                 ) {
                     return $this->expToString($value);
                 }
@@ -3420,12 +3420,12 @@ class Compiler
     protected function getBuiltinFunction($name)
     {
         $libName = 'lib' . preg_replace_callback(
-            '/_(.)/',
-            function ($m) {
-                return ucfirst($m[1]);
-            },
-            ucfirst($name)
-        );
+                '/_(.)/',
+                function ($m) {
+                    return ucfirst($m[1]);
+                },
+                ucfirst($name)
+            );
 
         return [$this, $libName];
     }
@@ -4802,7 +4802,7 @@ class Compiler
                     return 'color';
                 }
 
-                // fall-thru
+            // fall-thru
             case Type::T_FUNCTION:
                 return 'string';
 
@@ -4811,7 +4811,7 @@ class Compiler
                     return 'arglist';
                 }
 
-                // fall-thru
+            // fall-thru
             default:
                 return $value[0];
         }
