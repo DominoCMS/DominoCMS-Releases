@@ -18,6 +18,12 @@ Let's get it together to the official release and let's Create the Future.
 
 ### Version 0.9.2
 - Added contributors file
+- Cleaning up the discarded components (jaredreich/Pell, Zurb/Foundation)
+- Updating thirdparty frontend lib/components
+- New component libPublic/Ckeditor 5
+- Preparing the field for serious work:
+
+Next update: Backend/Frontend main Domino.App, discarding the technology folder, updating the install file
 
 ### Version log
 Check out full version log at https://docs.dominocms.com/versions/open-source.
