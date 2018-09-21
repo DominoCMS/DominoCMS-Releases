@@ -21,7 +21,8 @@ Let's get it together to the official release and let's Create the Future.
 - Cleaning up the discarded components (jaredreich/Pell, Zurb/Foundation)
 - Updating thirdparty frontend lib/components
 - New component libPublic/Ckeditor 5
-- Preparing the field for serious work:
+- Preparing the field for serious work.
+- Cleaning up the website creation base store items (they will be available from the store)
 
 Next update: Backend/Frontend main Domino.App, discarding the technology folder, updating the install file
 
