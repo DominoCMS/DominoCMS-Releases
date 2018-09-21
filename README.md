@@ -12,6 +12,7 @@ Let's get it together to the official release and let's Create the Future.
 - Creating working version with all functionalities
 - Creating stable release
 - Store implementation
+- Documentation
 
 
 ## Versions
