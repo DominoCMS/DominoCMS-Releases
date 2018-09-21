@@ -1,11 +1,26 @@
 # DominoCMS Open Source project
-## Version 0.9.141
+## Version 0.9.2
 https://www.dominocms.com
 
 ## Testers
 
 DominoCMS is still in an early stage of release, so testers are very much wanted.
 Let's get it together to the official release and let's Create the Future.
+
+## Initial challenges
+- Migrating to PHP 7
+- Creating working version with all functionalities
+- Creating stable release
+- Store implementation
+
+
+## Versions
+
+### Version 0.9.2
+- Added contributors file
+
+### Version log
+Check out full version log at https://docs.dominocms.com/versions/open-source.
 
 
 ## Installation
@@ -44,5 +59,4 @@ https://www.dominikcernelic.com
 
 ## Thanks
 
-Family for all these years of unconditional support. Domdesign clients for being the test bunnies and enabling the development.
-Special thanks to Marko K. Rudolf for the motivation in the right moments.
+Family for all these years of unconditional support. Domdesign clients for being the test bunnies and enabling the development. Special thanks to Marko K. Rudolf for the motivation in the right moments.
