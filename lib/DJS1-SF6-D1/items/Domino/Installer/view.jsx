@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Installer', function( data ) {	"use strict";	return <div class="domino-installer" name="top">            <component view="Domino.Installer.Steps" />        	<div id="inner"></div>		</div>} );

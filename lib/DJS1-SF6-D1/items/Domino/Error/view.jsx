@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Error', function( data ) {	"use strict";	return <div class="domino-error">		<div class="grid-x grid-padding-x grid-container align-center">			<div class="small-12 medium-10 large-6 cell"><h1>{ 'Error ' + data.responseCode }</h1>				</div>		</div>	</div>} );
