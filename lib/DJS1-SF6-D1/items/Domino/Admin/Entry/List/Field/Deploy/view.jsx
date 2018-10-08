@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.Deploy', function( data ) {	"use strict";	var icon = ( data.data == 1 ) ? 'icon-show' : 'icon-status';	return <div class="">			<a href="#" bool-val={ data.data }>				<span class='icon-export'></span>			</a>	</div>});

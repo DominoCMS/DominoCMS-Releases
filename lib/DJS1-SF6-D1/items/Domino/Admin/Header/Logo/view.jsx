@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Header.Logo', function( data ) {	"use strict";	return <div class="logo">			<a href={ data.url }></a>		</div>} );

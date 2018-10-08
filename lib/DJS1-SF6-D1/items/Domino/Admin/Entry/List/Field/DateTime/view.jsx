@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.DateTime', function( data ) {	"use strict";	return <span>{ data.data }</span>});

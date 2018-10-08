@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.Delete', function( data ) {	"use strict";		return <a href="#" class="edit">				<span class="icon-delete"></span>				</a>});

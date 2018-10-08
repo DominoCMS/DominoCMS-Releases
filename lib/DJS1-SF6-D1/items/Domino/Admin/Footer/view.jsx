@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Footer', function( data ) {	"use strict";	return <footer class="domino-admin-footer">		<div>            © { data.year } <a class="footer-link" href="http://www.dominocms.com" target="_blank">{ data.text }</a>, { 'v' + data.ver } | <a class="footer-link" href={ data.license } target="_blank">License</a>		</div>	</footer>} );

@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.Order', function( data ) {	"use strict";	//if ( <span class="icon-list"></span>		return <div class="icon-list">				<span>{ data.data }</span>				</div>});

@@ -1,1 +1,0 @@
-﻿DominoViews.registerView( 'Domino.Admin.Entry.List.Field.Text', function( data ) {	"use strict";	var content = data.data.substring(0,30);	if ( data.column.clickable == 1 && data.link )		return <a href={ data.link }>{ content }</a>	else		return <span>{ content }</span>});
